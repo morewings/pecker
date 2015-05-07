@@ -1,0 +1,149 @@
+.modal{
+  .modal-super{
+    @media (min-width: 768px) {
+      width: 750px;
+    }
+    @media (min-width: 992px) {
+      width: 970px;
+    }
+    @media (min-width: 1200px) {
+      width: 1170px;
+    }
+    margin-top: 0;
+  }
+  .modal-content{
+    background-color: #e6eced;
+    border-radius: 0;
+    padding: 50px;
+    .close{
+      opacity: .5;
+      font-size: 36px;
+      margin-top: -10px;
+    }
+  }
+
+  .modal-header{
+    border-bottom: none;
+  }
+  .modal-footer{
+    border-top: none;
+    text-align: center;
+    .btn{
+      display: inline-block;
+    }
+  }
+  h4{
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: @blue;
+  }
+  p{
+    .lightFont;
+    font-size: 15px;
+  }
+}
+
+#modal-6{
+  .close{
+
+  }
+  .modal-body{
+    padding: 0;
+  }
+  .modal-content{
+    padding: 0;
+    .close{
+      position: absolute;
+      right: 40px;
+      top: 20px;
+      z-index: 1000;
+      color: white;
+      opacity: 1;
+    }
+  }
+  .left-wrap{
+    padding: 60px 75px;
+    h4{
+      text-transform: none;
+      font-size: 40px;
+      letter-spacing: 0;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+    .price{
+      margin-bottom: 30px;
+      small,
+      strong{
+        display: block;
+      }
+      small{
+        font-size: 13px;
+        font-weight: bold;
+      }
+      strong{
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.2;
+      }
+      .left{
+        padding-right: 30px;
+        border-right: 1px solid #cccccc;
+        color: #999;
+        strong{
+          text-decoration: line-through;
+
+        }
+      }
+      .right{
+        padding-left: 30px;
+      }
+    }
+    input.form-control{
+      color:@blue;
+      background: url(../../img/line-2.png) #f4fafd bottom center no-repeat;
+      background-size: 100%;
+      border: none;
+      border-radius: 0;
+      margin-bottom: 30px;
+      font-size: 32px;
+      .lightFont;
+      height: 55px;
+    }
+    .info{
+      margin-bottom: 30px;
+      p{
+        .lightFont;
+      }
+    }
+  }
+  .right-wrap{
+    background: @blue;
+    padding: 60px 75px;
+    height: 631px;
+    .img-wrap{
+      margin-bottom: 60px;
+    }
+    .text{
+      text-align: center;
+      small,
+      strong{
+        display: block;
+        color: white;
+        opacity: .5;
+      }
+      small{
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      strong{
+        font-size: 90px;
+        line-height: 1.1;
+      }
+    }
+  }
+}
