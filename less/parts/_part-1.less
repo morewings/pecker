@@ -1,6 +1,11 @@
 .part-1{
   background-color: @blue;
-  padding: 50px 0;
+
+  .container{
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+  }
   .logo{
     margin-bottom: 110px;
     a{
@@ -34,3 +39,15 @@
   }
 }
 
+.part-1{
+  .custom-navbar-toggle{
+    color: white;
+    font-size: 36px;
+    line-height: 1;
+    margin-left: 15px;
+    &:hover{
+      text-decoration: none;
+    }
+
+  }
+}

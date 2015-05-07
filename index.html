@@ -39,452 +39,495 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div class="part-1" id="superpowers">
-    <div class="container">
-        <div class="row">
-            <div class="menu col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1">
-                <a href="#" class="btn btn-default pull-right" role="button">Предзаказ</a>
-            </div>
-            <div class="logo col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1">
-                <a href="#">Pecker Player</a>
-            </div>
-            <div class="text col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1">
-                <h2>Встречай<br/> супервозможности!</h2>
-                <p>Кино, Сериалы, ТВ, Музыка, Игры –<br/> все в одном стриминг-плеере.</p>
-                <a class="btn btn-default" href="#">Смотреть видео</a>
-                <div class="mouse-wrap">
-                    <span class="mouse-sign">mouse</span>
+<div class="mega-wrap">
+    <div class="part-1" id="main">
+        <div class="container">
+            <div class="row">
+                <div class="navmenu navmenu-inverse navmenu-fixed-right offcanvas-lg">
+                    <ul class="nav navmenu-nav">
+                        <li class="clearfix btn-wrap">
+                            <a href="#" class="btn btn-default pull-left">Предзаказ</a>
+                            <a href="#" class="close pull-right custom-navbar-toggle">&times;</a>
+                        </li>
+                        <li><a href="#main">Главная</a></li>
+                        <li><a href="#content">Контент</a></li>
+                        <li><a href="#voice-search">Голосовой поиск</a></li>
+                        <li><a href="#games">Игры</a></li>
+                        <li><a href="#home-video">Домашнее видео</a></li>
+                        <li><a href="#installation">Как подключить</a></li>
+                        <li><a href="#specs">Характеристики</a></li>
+                        <li class="small"><a href="#">Партнерство</a></li>
+                    </ul>
+                    <ul class="bottom-aligned nav navmenu-nav">
+                        <li class="language">
+                            <label>
+                                <span>Язык</span>
+                                <span class="select-wrap">
+                                    <select name="lang" id="lang">
+                                        <option value="Русский">Русский</option>
+                                        <option value="Русский">Русский</option>
+                                        <option value="Русский">Русский</option>
+                                    </select>
+                                    <b class="caret"></b>
+                                </span>
+
+                            </label>
+                        </li>
+                        <li class="social clearfix">
+                            <a href="#"><i class="glyph-vk"></i></a>
+                            <a href="#"><i class="glyph-facebook"></i></a>
+                            <a href="#"><i class="glyph-twitter"></i></a>
+                            <a href="#"><i class="glyph-google-plus"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1">
+                    <a href="#" class="custom-navbar-toggle pull-right"><i class="glyph-menu"></i></a>
+                    <a href="#" class="btn btn-default pull-right" role="button">Предзаказ</a>
+                </div>
+                <div class="logo col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1">
+                    <a href="#">Pecker Player</a>
+                </div>
+                <div class="text col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1">
+                    <h2>Встречай<br/> супервозможности!</h2>
+                    <p>Кино, Сериалы, ТВ, Музыка, Игры –<br/> все в одном стриминг-плеере.</p>
+                    <a class="btn btn-default" href="#">Смотреть видео</a>
+                    <div class="mouse-wrap">
+                        <span class="mouse-sign">mouse</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div><!--/.part-1-->
-<div class="part-2" id="enjoy">
+    </div><!--/.part-1-->
+    <div class="part-2" id="content">
 
-                <div role="tabpanel">
+        <div role="tabpanel">
 
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#movie" aria-controls="movie" role="tab" data-toggle="tab">Кино</a></li>
-                        <li role="presentation"><a href="#series" aria-controls="series" role="tab" data-toggle="tab">Сериалы</a></li>
-                        <li role="presentation"><a href="#show" aria-controls="show" role="tab" data-toggle="tab">Передачи и Шоу</a></li>
-                        <li role="presentation"><a href="#cartoon" aria-controls="cartoon" role="tab" data-toggle="tab">Мультфильмы</a></li>
-                        <li role="presentation"><a href="#channels" aria-controls="channels" role="tab" data-toggle="tab">ТВ каналы</a></li>
-                        <li role="presentation"><a href="#music" aria-controls="music" role="tab" data-toggle="tab">Музыка</a></li>
-                        <li role="presentation"><a href="#radio" aria-controls="radio" role="tab" data-toggle="tab">Радио</a></li>
-                    </ul>
-                    <div class="container">
-                        <div class="row">
-                            <div class="text col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1">
-                                <!-- Tab panes -->
-                                <div class="tab-content">
-                                    <div role="tabpanel" class="tab-pane active" id="movie">
-                                        <div class="row">
-                                            <div class="col-md-11 col-lg-11">
-                                                <h2><span>Смотри с наслаждением!</span><a href="#" class="btn btn-dimmed">Как это работает</a></h2>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#movie" aria-controls="movie" role="tab" data-toggle="tab">Кино</a></li>
+                <li role="presentation"><a href="#series" aria-controls="series" role="tab" data-toggle="tab">Сериалы</a></li>
+                <li role="presentation"><a href="#show" aria-controls="show" role="tab" data-toggle="tab">Передачи и Шоу</a></li>
+                <li role="presentation"><a href="#cartoon" aria-controls="cartoon" role="tab" data-toggle="tab">Мультфильмы</a></li>
+                <li role="presentation"><a href="#channels" aria-controls="channels" role="tab" data-toggle="tab">ТВ каналы</a></li>
+                <li role="presentation"><a href="#music" aria-controls="music" role="tab" data-toggle="tab">Музыка</a></li>
+                <li role="presentation"><a href="#radio" aria-controls="radio" role="tab" data-toggle="tab">Радио</a></li>
+            </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="text col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="movie">
+                                <div class="row">
+                                    <div class="col-md-11 col-lg-11">
+                                        <h2><span>Смотри с наслаждением!</span><a href="#" class="btn btn-dimmed">Как это работает</a></h2>
 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4">
+                                        <h3>Кино</h3>
+                                        <div class="text">
+                                            <p>Крутой кинотеатр у тебя дома &mdash; теперь это реальность! Pecker™ дарит безграничный доступ к огромному количеству фильмов из десятков онлайн-кинотеатров в HD качестве. Пользуйся интуитивно понятным поиском, удобным каталогом, тематическими и жанровыми подборками.</p>
+                                            <p>А если ты еще не решил, какой именно фильм тебе по душе, доверься интеллектуальному алгоритму <a href="#">Content Tip™</a>. Он с легкостью подберет тебе кино по вкусу!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-lg-8">
+                                        <div class="embed-wrap">
+                                            <div class="embed-frame">
+                                                <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-4 col-lg-4">
-                                                <h3>Кино</h3>
-                                                <div class="text">
-                                                    <p>Крутой кинотеатр у тебя дома &mdash; теперь это реальность! Pecker™ дарит безграничный доступ к огромному количеству фильмов из десятков онлайн-кинотеатров в HD качестве. Пользуйся интуитивно понятным поиском, удобным каталогом, тематическими и жанровыми подборками.</p>
-                                                    <p>А если ты еще не решил, какой именно фильм тебе по душе, доверься интеллектуальному алгоритму <a href="#">Content Tip™</a>. Он с легкостью подберет тебе кино по вкусу!
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-8 col-lg-8">
-                                                <div class="embed-wrap">
-                                                    <div class="embed-frame">
-                                                        <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
-                                                    </div>
-                                                </div>
 
+                                    </div>
+                                </div>
+                            </div><!--/.tab-pane-->
+                            <div role="tabpanel" class="tab-pane" id="series">
+                                <div class="row">
+                                    <div class="col-md-11 col-lg-11">
+                                        <h2><span>Дегустируй новые серии!</span><a href="#" class="btn btn-dimmed">Как это работает</a></h2>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4">
+                                        <h3>сериалы</h3>
+                                        <div class="text">
+                                            <p>Невероятно обширная вселенная сериалов и озвучек из разных источников. Если сериал есть в интернете, то и в Pecker™ он тоже есть!</p>
+                                            <p>Теперь ты никогда не пропустишь новый эпизод, ведь мы напомним тебе о его выходе!</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-lg-8">
+                                        <div class="embed-wrap">
+                                            <div class="embed-frame">
+                                                <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
                                             </div>
                                         </div>
-                                    </div><!--/.tab-pane-->
-                                    <div role="tabpanel" class="tab-pane" id="series">
-                                        <div class="row">
-                                            <div class="col-md-11 col-lg-11">
-                                                <h2><span>Дегустируй новые серии!</span><a href="#" class="btn btn-dimmed">Как это работает</a></h2>
 
+                                    </div>
+                                </div>
+                            </div><!--/.tab-pane-->
+                            <div role="tabpanel" class="tab-pane" id="show">
+                                <div class="row">
+                                    <div class="col-md-11 col-lg-11">
+                                        <h2><span>Будь в курсе событий!</span><a href="#" class="btn btn-dimmed">Как это работает</a></h2>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4">
+                                        <h3>Передачи и шоу</h3>
+                                        <div class="text">
+                                            <p>Любишь телевидение, но часто не успеваешь к эфиру? Не беда. Смотри тысячи телевизионных передач и шоу в любое время суток. Самые рейтинговые, самые интересные и всегда вовремя!</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-lg-8">
+                                        <div class="embed-wrap">
+                                            <div class="embed-frame">
+                                                <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-4 col-lg-4">
-                                                <h3>сериалы</h3>
-                                                <div class="text">
-                                                    <p>Невероятно обширная вселенная сериалов и озвучек из разных источников. Если сериал есть в интернете, то и в Pecker™ он тоже есть!</p>
-                                                    <p>Теперь ты никогда не пропустишь новый эпизод, ведь мы напомним тебе о его выходе!</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-8 col-lg-8">
-                                                <div class="embed-wrap">
-                                                    <div class="embed-frame">
-                                                        <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
-                                                    </div>
-                                                </div>
 
+                                    </div>
+                                </div>
+                            </div><!--/.tab-pane-->
+                            <div role="tabpanel" class="tab-pane" id="cartoon">
+                                <div class="row">
+                                    <div class="col-md-11 col-lg-11">
+                                        <h2><span>Дари детям лучшее!</span><a href="#" class="btn btn-dimmed">Как это работает</a></h2>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4">
+                                        <h3>Мультфильмы</h3>
+                                        <div class="text">
+                                            <p>Pecker™ – это самая настоящая виртуальная няня, которую всем сердцем полюбят твои дети. Ведь она подарит им доступ к десяткам тысяч мультфильмов, детских передач и фильмов, а режим TV for kids™ учтет все твои требования. </p>
+                                            <p><a href="#">TV for kids™</a> – это специальный режим, который поможет не только настроить плейлист, расписание старта и выключения, но еще и удаленно управлять воспроизведением с помощью смартфона.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-lg-8">
+                                        <div class="embed-wrap">
+                                            <div class="embed-frame">
+                                                <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
                                             </div>
                                         </div>
-                                    </div><!--/.tab-pane-->
-                                    <div role="tabpanel" class="tab-pane" id="show">
-                                        <div class="row">
-                                            <div class="col-md-11 col-lg-11">
-                                                <h2><span>Будь в курсе событий!</span><a href="#" class="btn btn-dimmed">Как это работает</a></h2>
 
+                                    </div>
+                                </div>
+                            </div><!--/.tab-pane-->
+                            <div role="tabpanel" class="tab-pane" id="channels">
+                                <div class="row">
+                                    <div class="col-md-11 col-lg-11">
+                                        <h2><span>Дари детям лучшее!</span><a href="#" class="btn btn-dimmed">Как это работает</a></h2>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4">
+                                        <h3>Шоу продолжается!</h3>
+                                        <div class="text">
+                                            <p>Любишь смотреть ТВ-шоу в прямом эфире? К твоим услугам – более 200 телеканалов на любой вкус, в том числе и в HD качестве. А наша система рекомендации контента подскажет, на каком канале идет самое интересное шоу, кино или передача прямо сейчас.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-lg-8">
+                                        <div class="embed-wrap">
+                                            <div class="embed-frame">
+                                                <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-4 col-lg-4">
-                                                <h3>Передачи и шоу</h3>
-                                                <div class="text">
-                                                    <p>Любишь телевидение, но часто не успеваешь к эфиру? Не беда. Смотри тысячи телевизионных передач и шоу в любое время суток. Самые рейтинговые, самые интересные и всегда вовремя!</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-8 col-lg-8">
-                                                <div class="embed-wrap">
-                                                    <div class="embed-frame">
-                                                        <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
-                                                    </div>
-                                                </div>
 
+                                    </div>
+                                </div>
+                            </div><!--/.tab-pane-->
+                            <div role="tabpanel" class="tab-pane" id="music">
+                                <div class="row">
+                                    <div class="col-md-11 col-lg-11">
+                                        <h2><span>Поймай свою волну!</span><a href="#" class="btn btn-dimmed">Как это работает</a></h2>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4">
+                                        <h3>Музыка</h3>
+                                        <div class="text">
+                                            <p>Сотни тысяч часов музыки всех стилей, жанров и направлений! Лучшие темы для драйва, расслабления, концентрации, спорта и вдохновения. Pecker™ – твой любимый Dj! </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-lg-8">
+                                        <div class="embed-wrap">
+                                            <div class="embed-frame">
+                                                <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
                                             </div>
                                         </div>
-                                    </div><!--/.tab-pane-->
-                                    <div role="tabpanel" class="tab-pane" id="cartoon">
-                                        <div class="row">
-                                            <div class="col-md-11 col-lg-11">
-                                                <h2><span>Дари детям лучшее!</span><a href="#" class="btn btn-dimmed">Как это работает</a></h2>
 
+                                    </div>
+                                </div>
+                            </div><!--/.tab-pane-->
+                            <div role="tabpanel" class="tab-pane" id="radio">
+                                <div class="row">
+                                    <div class="col-md-11 col-lg-11">
+                                        <h2><span>Поймай свою волну!</span><a href="#" class="btn btn-dimmed">Как это работает</a></h2>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4">
+                                        <h3>Радио</h3>
+                                        <div class="text">
+                                            <p>Не знаешь, что именно хочешь послушать? Посоветуйся с Pecker™! Он подарит тебе море радиостанций и поможет оседлать лучшие волны. </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-lg-8">
+                                        <div class="embed-wrap">
+                                            <div class="embed-frame">
+                                                <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-4 col-lg-4">
-                                                <h3>Мультфильмы</h3>
-                                                <div class="text">
-                                                    <p>Pecker™ – это самая настоящая виртуальная няня, которую всем сердцем полюбят твои дети. Ведь она подарит им доступ к десяткам тысяч мультфильмов, детских передач и фильмов, а режим TV for kids™ учтет все твои требования. </p>
-                                                    <p><a href="#">TV for kids™</a> – это специальный режим, который поможет не только настроить плейлист, расписание старта и выключения, но еще и удаленно управлять воспроизведением с помощью смартфона.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-8 col-lg-8">
-                                                <div class="embed-wrap">
-                                                    <div class="embed-frame">
-                                                        <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
-                                                    </div>
-                                                </div>
 
-                                            </div>
-                                        </div>
-                                    </div><!--/.tab-pane-->
-                                    <div role="tabpanel" class="tab-pane" id="channels">
-                                        <div class="row">
-                                            <div class="col-md-11 col-lg-11">
-                                                <h2><span>Дари детям лучшее!</span><a href="#" class="btn btn-dimmed">Как это работает</a></h2>
+                                    </div>
+                                </div>
+                            </div><!--/.tab-pane-->
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4 col-lg-4">
-                                                <h3>Шоу продолжается!</h3>
-                                                <div class="text">
-                                                    <p>Любишь смотреть ТВ-шоу в прямом эфире? К твоим услугам – более 200 телеканалов на любой вкус, в том числе и в HD качестве. А наша система рекомендации контента подскажет, на каком канале идет самое интересное шоу, кино или передача прямо сейчас.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-8 col-lg-8">
-                                                <div class="embed-wrap">
-                                                    <div class="embed-frame">
-                                                        <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
-                                                    </div>
-                                                </div>
 
-                                            </div>
-                                        </div>
-                                    </div><!--/.tab-pane-->
-                                    <div role="tabpanel" class="tab-pane" id="music">
-                                        <div class="row">
-                                            <div class="col-md-11 col-lg-11">
-                                                <h2><span>Поймай свою волну!</span><a href="#" class="btn btn-dimmed">Как это работает</a></h2>
+        </div><!--/.tabpanel-->
+    </div><!--/.part-2-->
+    <div class="part-3" id="voice-search">
+        <div class="container">
+            <div class="row">
+                <h2 class="col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1">Сказано – сделано!</h2>
+                <div class="col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1">
+                    <div class="discovery">
+                        <h3>Диксавери</h3>
+                        <dl class="clearfix">
+                            <dd>Фильмы</dd>
+                            <dt>Discovery: Аномалия тела</dt>
+                            <dd>Фильмы</dd>
+                            <dt>Discovery: Двойники Земли</dt>
+                            <dd class="accent">Каналы</dd>
+                            <dt class="accent">Dicsovery channel</dt>
+                            <dd>Фильмы</dd>
+                            <dt>Discovery: Внутри планеты Земля</dt>
+                            <dd>Фильмы</dd>
+                            <dt>Discovery: Аномалия тела</dt>
+                            <dd>Фильмы</dd>
+                            <dt>Discovery: В поисках суперлюдей</dt>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <img src="http://placehold.it/290x500/2a9edf/ffffff" alt="" class="img-responsive"/>
+                </div>
+                <div class="col-md-4 col-lg-4 text">
+                    <h3>Голосовой поиск</h3>
+                    <div class="text">
+                        <p>Говори и смотри – так работает поиск в этом плеере. Просто зажми на пульте клавишу со значком микрофона и произнеси название фильма, сериала, музыкального альбома или игры. И через мгновение на экране появится результат.</p>
+                        <p>Забыл название? Не беда! Озвучь что угодно – имя режиссера, актера, название жанра. Еще никогда процесс поиска не был таким легким и увлекательным!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4 col-lg-4">
-                                                <h3>Музыка</h3>
-                                                <div class="text">
-                                                    <p>Сотни тысяч часов музыки всех стилей, жанров и направлений! Лучшие темы для драйва, расслабления, концентрации, спорта и вдохновения. Pecker™ – твой любимый Dj! </p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-8 col-lg-8">
-                                                <div class="embed-wrap">
-                                                    <div class="embed-frame">
-                                                        <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
-                                                    </div>
-                                                </div>
+    </div><!--/.part-3-->
+    <div class="part-4" id="games">
+        <div class="container">
+            <div class="row">
+                <h2>Выбирай любую реальность</h2>
+                <div class="col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 text">
+                    <h3>игры</h3>
+                    <p>Pecker™ – это полноценная игровая приставка: мощная, скоростная, бесшумная. Тебя ждут более 10 бесплатных игр и магазин с сотнями игр разных жанров.</p>
+                    <p> Забудь про утомительный подбор джойстиков и геймпадов! У Pecker™ есть нечто лучшее: пульт-трансформер
+                        <a href="#">TransformToPlay™</a>. Просто расположи пульт горизонтально и передвинь центральное кольцо влево – на части клавиш сразу включится игровая подсветка. Все!</p>
+                </div>
+            </div>
 
-                                            </div>
-                                        </div>
-                                    </div><!--/.tab-pane-->
-                                    <div role="tabpanel" class="tab-pane" id="radio">
-                                        <div class="row">
-                                            <div class="col-md-11 col-lg-11">
-                                                <h2><span>Поймай свою волну!</span><a href="#" class="btn btn-dimmed">Как это работает</a></h2>
 
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4 col-lg-4">
-                                                <h3>Радио</h3>
-                                                <div class="text">
-                                                    <p>Не знаешь, что именно хочешь послушать? Посоветуйся с Pecker™! Он подарит тебе море радиостанций и поможет оседлать лучшие волны. </p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-8 col-lg-8">
-                                                <div class="embed-wrap">
-                                                    <div class="embed-frame">
-                                                        <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
-                                                    </div>
-                                                </div>
+        </div>
+    </div><!--/.part-4-->
+    <div class="part-5" id="home-video">
+        <div class="container">
+            <div class="row">
+                <h2>Делись впечатлениями</h2>
+                <div class="col-md-6 col-lg-6">
+                    <div class="embed-wrap">
+                        <div class="embed-frame">
+                            <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
+                        </div>
+                    </div>
 
-                                            </div>
-                                        </div>
-                                    </div><!--/.tab-pane-->
+                </div>
+                <div class="col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 text">
+                    <h3>Твои файлы</h3>
+                    <div role="tabpanel">
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#ios" aria-controls="ios" role="tab" data-toggle="tab">iOS/Android</a></li>
+                            <li role="presentation"><a href="#usb" aria-controls="usb" role="tab" data-toggle="tab">USB</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="ios"><p>У тебя есть смартфон/планшет и море фотографий из отпуска? Замечательно! С Pecker™ ты можешь стримить фото и видео прямо на телевизор, не путаясь в проводах! Теперь делиться с друзьями впечатлениями об отдыхе – невероятно просто и увлекательно.</p></div>
+                            <div role="tabpanel" class="tab-pane " id="usb">
+                                <div class="text">
+                                    <p>Ты обладатель уникальной коллекции фильмов? Просматривай ее с помощью Pecker™. Плеер поддерживает воспроизведение фото и видео файлов с внешнего накопителя, ведь у него есть порт USB.</p>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-
-
-                </div><!--/.tabpanel-->
-</div><!--/.part-2-->
-<div class="part-3" id="voice-search">
-    <div class="container">
-        <div class="row">
-            <h2 class="col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1">Сказано – сделано!</h2>
-            <div class="col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1">
-                <div class="discovery">
-                    <h3>Диксавери</h3>
-                    <dl class="clearfix">
-                        <dd>Фильмы</dd>
-                        <dt>Discovery: Аномалия тела</dt>
-                        <dd>Фильмы</dd>
-                        <dt>Discovery: Двойники Земли</dt>
-                        <dd class="accent">Каналы</dd>
-                        <dt class="accent">Dicsovery channel</dt>
-                        <dd>Фильмы</dd>
-                        <dt>Discovery: Внутри планеты Земля</dt>
-                        <dd>Фильмы</dd>
-                        <dt>Discovery: Аномалия тела</dt>
-                        <dd>Фильмы</dd>
-                        <dt>Discovery: В поисках суперлюдей</dt>
-                    </dl>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3">
-                <img src="http://placehold.it/290x500/2a9edf/ffffff" alt="" class="img-responsive"/>
-            </div>
-            <div class="col-md-4 col-lg-4 text">
-                <h3>Голосовой поиск</h3>
-                <div class="text">
-                    <p>Говори и смотри – так работает поиск в этом плеере. Просто зажми на пульте клавишу со значком микрофона и произнеси название фильма, сериала, музыкального альбома или игры. И через мгновение на экране появится результат.</p>
-                    <p>Забыл название? Не беда! Озвучь что угодно – имя режиссера, актера, название жанра. Еще никогда процесс поиска не был таким легким и увлекательным!</p>
                 </div>
             </div>
         </div>
-    </div>
-
-</div><!--/.part-3-->
-<div class="part-4" id="reality">
-    <div class="container">
-        <div class="row">
-            <h2>Выбирай любую реальность</h2>
-            <div class="col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 text">
-                <h3>игры</h3>
-                <p>Pecker™ – это полноценная игровая приставка: мощная, скоростная, бесшумная. Тебя ждут более 10 бесплатных игр и магазин с сотнями игр разных жанров.</p>
-                <p> Забудь про утомительный подбор джойстиков и геймпадов! У Pecker™ есть нечто лучшее: пульт-трансформер
-                    <a href="#">TransformToPlay™</a>. Просто расположи пульт горизонтально и передвинь центральное кольцо влево – на части клавиш сразу включится игровая подсветка. Все!</p>
-            </div>
-        </div>
-
-
-    </div>
-</div><!--/.part-4-->
-<div class="part-5" id="share">
-    <div class="container">
-        <div class="row">
-            <h2>Делись впечатлениями</h2>
-            <div class="col-md-6 col-lg-6">
-                <div class="embed-wrap">
-                    <div class="embed-frame">
-                        <img class="img-responsive" src="http://placehold.it/805x460/2a9edf/ffffff">
+    </div><!--/.part-5-->
+    <div class="part-6" id="installation">
+        <div class="blue-wrap">
+            <div class="container">
+                <div class="row">
+                    <h2>Проще не бывает!</h2>
+                    <div class="col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 text">
+                        <h3>Как подключить</h3>
+                        <p>Ты еще помнишь время, когда для подключения к телевидению нужен был мастер? Вызвать его, дождаться, протянуть провода, все настроить…</p>
+                        <p>Слава богу, все это в прошлом! Pecker Player – ты сможешь подключить самостоятельно. Тебе понадобится лишь соединение с интернетом.</p>
+                        <p class="highlight">Ты можешь подключить приставку при помощи Ethernet кабеля</p>
                     </div>
                 </div>
-
             </div>
-            <div class="col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 text">
-                <h3>Твои файлы</h3>
-                <div role="tabpanel">
-
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#ios" aria-controls="ios" role="tab" data-toggle="tab">iOS/Android</a></li>
-                        <li role="presentation"><a href="#usb" aria-controls="usb" role="tab" data-toggle="tab">USB</a></li>
-                    </ul>
-
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="ios"><p>У тебя есть смартфон/планшет и море фотографий из отпуска? Замечательно! С Pecker™ ты можешь стримить фото и видео прямо на телевизор, не путаясь в проводах! Теперь делиться с друзьями впечатлениями об отдыхе – невероятно просто и увлекательно.</p></div>
-                        <div role="tabpanel" class="tab-pane " id="usb">
-                            <div class="text">
-                                <p>Ты обладатель уникальной коллекции фильмов? Просматривай ее с помощью Pecker™. Плеер поддерживает воспроизведение фото и видео файлов с внешнего накопителя, ведь у него есть порт USB.</p>
-                            </div>
+        </div><!--/.blue-wrap-->
+        <div class="white-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-md-offset-2 col-lg-offset-2">
+                        <h3>HDMI</h3>
+                        <div class="text">
+                            <p>Ты обладатель современного ТВ или проектора? Подключай плеер по интерфейсу HDMI и смотри фильмы в
+                                HD качестве!</p>
                         </div>
                     </div>
-
+                    <div class="col-md-3 col-lg-3">
+                        <h3>AVI</h3>
+                        <div class="text">
+                            <p>У тебя живет старенький телевизор древней модели? Воспользуйся CVBS выходом и подключай плеер к AV входу телевизора.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <h3>S/PDIF </h3>
+                        <div class="text">
+                            <p>Ты счастливый обладатель Hi-Fi звуковой системы или домашнего кинотеатра? Используй оптический аудиовыход!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div><!--/.part-5-->
-<div class="part-6">
-    <div class="blue-wrap">
+
+        </div><!--/.white-wrap-->
+    </div><!--/.part-6-->
+
+    <div class="part-7">
         <div class="container">
             <div class="row">
-                <h2>Проще не бывает!</h2>
-                <div class="col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 text">
-                    <h3>Как подключить</h3>
-                    <p>Ты еще помнишь время, когда для подключения к телевидению нужен был мастер? Вызвать его, дождаться, протянуть провода, все настроить…</p>
-                    <p>Слава богу, все это в прошлом! Pecker Player – ты сможешь подключить самостоятельно. Тебе понадобится лишь соединение с интернетом.</p>
-                    <p class="highlight">Ты можешь подключить приставку при помощи Ethernet кабеля</p>
+                <div class="col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1">
+                    <div class="text-wrap">
+                        <h2>Уникальное крепление</h2>
+                        <p>Ты еще помнишь время, когда для подключения к телевидению нужен был мастер? Вызвать его, дождаться, протянуть провода, все настроить… Порой, полдня уходило! Слава богу, все это в прошлом!</p>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </div><!--/.blue-wrap-->
-    <div class="white-wrap">
+    </div><!--/.part-7-->
+
+    <div class="part-8" id="specs">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-lg-3 col-md-offset-2 col-lg-offset-2">
-                    <h3>HDMI</h3>
-                    <div class="text">
-                        <p>Ты обладатель современного ТВ или проектора? Подключай плеер по интерфейсу HDMI и смотри фильмы в
-                            HD качестве!</p>
-                    </div>
+                <h2>Характеристики</h2>
+                <div class="col-md-2 col-lg-2 col-md-offset-2 col-lg-offset-2">
+                    <h3>процессор</h3>
+                    <div class="text"><p>4х ядерный 1,2 Ghz процессор</p></div>
                 </div>
-                <div class="col-md-3 col-lg-3">
-                    <h3>AVI</h3>
-                    <div class="text">
-                        <p>У тебя живет старенький телевизор древней модели? Воспользуйся CVBS выходом и подключай плеер к AV входу телевизора.</p>
-                    </div>
+                <div class="col-md-2 col-lg-2 col-md-offset-2 col-lg-offset-2">
+                    <h3>озу</h3>
+                    <div class="text"><p>Оперативная память доступна в двух опциях 2Гб и 8Гб</p></div>
                 </div>
-                <div class="col-md-3 col-lg-3">
-                    <h3>S/PDIF </h3>
-                    <div class="text">
-                        <p>Ты счастливый обладатель Hi-Fi звуковой системы или домашнего кинотеатра? Используй оптический аудиовыход!</p>
-                    </div>
+                <div class="col-md-2 col-lg-2 col-md-offset-2 col-lg-offset-2">
+                    <h3>видео</h3>
+                    <div class="text"><p>8x ядерное графическое ядро с поддержкой 4K Ultra high definition video</p></div>
                 </div>
             </div>
         </div>
 
-    </div><!--/.white-wrap-->
-</div><!--/.part-6-->
+    </div><!--/.part-8-->
+    <div class="part-9">
+        <div class="container">
+            <div class="row">
+                <h2 class="col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1">Получи Pecker первым всего за 777 грн</h2>
+                <div class="col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1 btn-wrap">
+                    <a href="#" class="btn btn-default">Сделать предзаказ</a>
+                </div>
+                <div class="soc-wrap col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1">
+                    <a href="#" class="vk">Vk</a>
+                    <a href="#" class="vk">Vk</a>
+                    <a href="#" class="vk">Vk</a>
+                    <a href="#" class="vk">Vk</a>
+                </div>
 
-<div class="part-7">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1">
-                <div class="text-wrap">
-                    <h2>Уникальное крепление</h2>
-                    <p>Ты еще помнишь время, когда для подключения к телевидению нужен был мастер? Вызвать его, дождаться, протянуть провода, все настроить… Порой, полдня уходило! Слава богу, все это в прошлом!</p>
+
+            </div>
+        </div>
+    </div><!--/.part-9-->
+
+    <div class="part-10">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-8 col-md-offset-3 col-lg-offset-3">
+                    <form class="form-inline" action="#">
+                        <label for="email">Подпишись на новости и будь в курсе новинок от Pecker™!</label>
+                        <div class="input-wrap">
+                            <input type="email" id="email"/>
+                            <button>&rarr;</button>
+                        </div>
+
+                    </form>
                 </div>
 
             </div>
         </div>
-    </div>
-</div><!--/.part-7-->
 
-<div class="part-8">
-    <div class="container">
-        <div class="row">
-            <h2>Характеристики</h2>
-            <div class="col-md-2 col-lg-2 col-md-offset-2 col-lg-offset-2">
-                <h3>процессор</h3>
-                <div class="text"><p>4х ядерный 1,2 Ghz процессор</p></div>
+
+    </div><!--/.part-10-->
+
+
+    <footer>
+        <div class="container">
+            <div class="col-md-3">
+                <a href="#" class="logo"></a>
+                <a href="#">Партнерство</a>
             </div>
-            <div class="col-md-2 col-lg-2 col-md-offset-2 col-lg-offset-2">
-                <h3>озу</h3>
-                <div class="text"><p>Оперативная память доступна в двух опциях 2Гб и 8Гб</p></div>
-            </div>
-            <div class="col-md-2 col-lg-2 col-md-offset-2 col-lg-offset-2">
-                <h3>видео</h3>
-                <div class="text"><p>8x ядерное графическое ядро с поддержкой 4K Ultra high definition video</p></div>
-            </div>
-        </div>
-    </div>
-
-</div><!--/.part-8-->
-<div class="part-9">
-    <div class="container">
-        <div class="row">
-            <h2 class="col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1">Получи Pecker первым всего за 777 грн</h2>
-            <div class="col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1 btn-wrap">
-                <a href="#" class="btn btn-default">Сделать предзаказ</a>
-            </div>
-            <div class="soc-wrap col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1">
-                <a href="#" class="vk">Vk</a>
-                <a href="#" class="vk">Vk</a>
-                <a href="#" class="vk">Vk</a>
-                <a href="#" class="vk">Vk</a>
-            </div>
-
-
-        </div>
-    </div>
-</div><!--/.part-9-->
-
-<div class="part-10">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-lg-8 col-md-offset-3 col-lg-offset-3">
-                <form class="form-inline" action="#">
-                    <label for="email">Подпишись на новости и будь в курсе новинок от Pecker™!</label>
-                    <div class="input-wrap">
-                        <input type="email" id="email"/>
-                        <button>&rarr;</button>
-                    </div>
-
+            <div class="col-md-3 col-md-offset-6">
+                <form action="#" class="pull-right">
+                    <label>
+                        <span>Язык:</span>
+                        <select>
+                            <option value="volvo">Русский</option>
+                            <option value="saab">Английский</option>
+                            <option value="mercedes">Еще какой-то</option>
+                        </select>
+                    </label>
                 </form>
             </div>
 
         </div>
-    </div>
 
+    </footer>
+</div>
 
-</div><!--/.part-10-->
-
-
-<footer>
-    <div class="container">
-        <div class="col-md-3">
-            <a href="#" class="logo"></a>
-            <a href="#">Партнерство</a>
-        </div>
-        <div class="col-md-3 col-md-offset-6">
-            <form action="#" class="pull-right">
-                <label>
-                    <span>Язык:</span>
-                    <select>
-                        <option value="volvo">Русский</option>
-                        <option value="saab">Английский</option>
-                        <option value="mercedes">Еще какой-то</option>
-                    </select>
-                </label>
-            </form>
-        </div>
-
-    </div>
-
-</footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
@@ -492,5 +535,6 @@
 
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>
