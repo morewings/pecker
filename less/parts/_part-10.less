@@ -1,14 +1,28 @@
 .part-10{
-  padding: 50px 0;
+  padding: @topMarginLg 0;
   background-color: #e6eced;
+  @media (max-width: 992px){
+    text-align: center;
+    form{
+      display: inline-block;
+    }
+  }
   label{
     font-size: 15px;
     .lightFont;
     margin-right: 30px;
+    @media (min-width: 992px) and (max-width: 1200px){
+      font-size: 12px;
+      margin-right: 15px;
+    }
   }
   .input-wrap{
     position: relative;
     display: inline-block;
+    @media (max-width: 992px){
+      width: 100%;
+      margin-top: 40px;
+    }
   }
   input{
     border-top: none;
@@ -20,13 +34,21 @@
     height: 30px;
     width: 290px;
     background-color: transparent;
+    @media (min-width: 992px) and (max-width: 1200px){
+      width: 260px;
+    }
+    @media (max-width: 992px){
+      width: 100%;
+    }
   }
   button{
-    background: url(../../img/button.png) no-repeat;
+    background: transparent;
+    color: @blue;
     border: none;
+    font-size: 25px;
+    line-height: 1;
     width: 25px;
     height: 25px;
-    text-indent: -9999px;
     position: absolute;
     right: 0;
     top:0;

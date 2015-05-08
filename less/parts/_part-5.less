@@ -1,40 +1,65 @@
 .part-5{
   overflow-y: hidden;
-  padding-top: 80px;
+  padding-top: @topMarginLg;
   h2{
-    margin-top: 0;
-    margin-bottom: 70px;
-  }
-  h3{
-    font-size: 16px;
-    color: @blue;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: bold;
-    margin-bottom: 30px;
     margin-top: 0;
   }
   .embed-wrap{
+    overflow: hidden;
     padding: 0 30px;
+    @media (max-width: 992px){
+      padding: 0;
+    }
     .embed-frame{
       box-shadow: 10px 20px 0 5px #c9c9c9, 20px 40px 0 10px #e3e3e3;
+      @media (max-width: 992px){
+        box-shadow: none;
+      }
+    }
+  }
+  h3{
+    color: @blue;
+    @media (min-width: 992px) and (max-width: 1200px){
+      margin-bottom: 20px;
     }
   }
 }
 
 .part-5{
+  .tabs-wrap{
+    @media (max-width: 992px){
+      padding: 0 @topMarginLg @topMarginLg;
+    }
+  }
   .nav-tabs{
     border-bottom: none;
     margin-bottom: 45px;
+    @media (min-width: 992px) and (max-width: 1200px){
+      margin-bottom: 10px;
+    }
     &>li{
       margin-bottom: 0;
       border-bottom: 1px solid #e3e3e3;
+      @media (max-width: 992px){
+        width: 50%;
+      }
       a{
         color: #999999;
         .lightFont;
         font-size: 16px;
         border: none;
         padding-bottom: 20px;
+        i,
+        span{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        i{
+          font-size: 36px;
+        }
+        @media (min-width: 992px) and (max-width: 1200px){
+          padding-bottom: 10px;
+        }
 
       }
       &.active,
@@ -49,6 +74,9 @@
       }
       &.active{
         border-bottom: 3px solid @blue;
+        i{
+          color: @blue;
+        }
         &>a,
         &>a:hover,
         &>a:focus{

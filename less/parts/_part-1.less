@@ -2,7 +2,8 @@
   background-color: @blue;
 
   .container{
-    padding: 50px 0;
+    padding-top: @topMarginLg;
+    padding-bottom: @topMarginLg;
     position: relative;
     overflow: hidden;
   }
@@ -28,13 +29,15 @@
     p{
       color: white;
       font-size: 22px;
-      .lightFont();
       line-height: 32px;
       margin-bottom: 40px;
     }
     .mouse-wrap{
       text-align: center;
       padding-top: 20px;
+      font-size: 24px;
+      color: white;
+      cursor: default;
     }
     a{
       color: white;
@@ -56,5 +59,37 @@
       text-decoration: none;
     }
 
+  }
+}
+
+.affix{
+  z-index: 1000;
+}
+
+
+#navbar-scroll{
+  ul{
+    border: none;
+  }
+  li{
+    float: none;
+    margin-bottom: 30px;
+    a{
+      padding: 0;
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: #025e91;
+      border-radius: 50em;
+      opacity: .4;
+
+    }
+    &.active{
+      a{
+        border: none;
+        opacity: 1;
+      }
+
+    }
   }
 }

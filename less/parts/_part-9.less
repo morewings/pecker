@@ -1,13 +1,30 @@
 .part-9{
-  padding-top: 80px;
+  padding-top: @topMarginLg;
   background: @blue;
   h2{
     color: white;
-    margin-bottom: 30px;
   }
   .btn-wrap,
   .soc-wrap{
     text-align: center;
     margin-bottom: 30px;
+
+  }
+  .soc-wrap{
+    a{
+      color: white;
+      display: inline-block;
+      margin: 0 5px;
+      font-size: 18px;
+      line-height: 45px;
+      width: 45px;
+      height: 45px;
+      text-align: center;
+      border-radius: 50em;
+      &:hover{
+        text-decoration: none;
+        background-color: #335b9a;
+      }
+    }
   }
 }

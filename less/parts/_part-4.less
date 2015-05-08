@@ -1,22 +1,19 @@
 .part-4{
   background: #000;
-  padding-top: 80px;
+  padding-top: @topMarginLg;
   padding-bottom: 180px;
   h2{
     color: white;
-    margin-top: 0;
-    margin-bottom: 40px;
+  }
+  .text{
+    @media (max-width: 992px){
+      padding: @topMarginLg;
+    }
   }
   h3{
-    font-size: 16px;
-    text-transform: uppercase;
     color: @blue;
-    font-weight: bold;
-    letter-spacing: 3px;
   }
   p{
     color: white;
-    font-size: 15px;
-    line-height: 25px;
   }
 }
