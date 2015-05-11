@@ -1,0 +1,47 @@
+.top-menu{
+  background-color: transparent;
+  padding-top: 30px;
+  .logo{
+    a{
+      display: block;
+      text-indent: -9999px;
+      background: url(../../img/logo.png);
+      width: 231px;
+      height: 54px;
+    }
+  }
+  .custom-navbar-toggle{
+    color: white;
+    font-size: 36px;
+    line-height: 1;
+    margin-left: 15px;
+    &:hover{
+      text-decoration: none;
+    }
+
+  }
+  &.sticky{
+    padding: 10px 0;
+    background-color: #fff;
+    .logo{
+      padding-top: 12px;
+      a{
+        text-indent: -9999px;
+        width: 95px;
+        height: 15px;
+        background: url(../../img/logo-small.svg) no-repeat;
+      }
+    }
+    .btn-default{
+      background-color: @blue;
+      color: white;
+      border-color: @blue;
+
+    }
+    .custom-navbar-toggle{
+      color: @blue;
+
+    }
+  }
+}
+
