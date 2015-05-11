@@ -1,10 +1,10 @@
 $(document).ready(function(){
    //nav
     var navMenu=$('.navmenu');
-    $('.close.custom-navbar-toggle').on('click', function(e){
+    $('.navmenu .btn-wrap a').on('click', function(e){
         e.preventDefault();
         //navMenu.toggleClass('show-menu')
-        $('.navmenu').offcanvas('hide')
+        $('.navmenu').offcanvas('toggle')
     });
 /*    $('body')
         .on('show.bs.offcanvas', function(){

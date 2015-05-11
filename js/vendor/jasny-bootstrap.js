@@ -146,10 +146,10 @@
       $('body').data('offcanvas-style', $('body').attr('style') || '')
     }
       
-    $('body').css('overflow', 'hidden')
+    //$('body').css('overflow', 'hidden')
 
     if ($('body').width() > bodyWidth) {
-      var padding = parseInt($('body').css(prop), 10) + $('body').width() - bodyWidth
+      var padding = '' /*parseInt($('body').css(prop), 10) + $('body').width() - bodyWidth*/
       
       setTimeout(function() {
         $('body').css(prop, padding)
