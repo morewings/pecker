@@ -1,8 +1,15 @@
 .part-6{
+
   .blue-wrap{
-    padding-top: @topMarginLg;
     background: @blue;
-    padding-bottom: 260px;
+    padding-top: @topMarginLg;
+    .container{
+      background: url(../../img/6/bg-6-1.png)  no-repeat @blue;
+      background-position: 0 100px;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+      padding-bottom: 90px;
+    }
     .text{
       @media (max-width: 992px){
         padding: 0 @topMarginLg;
@@ -27,7 +34,14 @@
 }
 .part-6{
   .white-wrap{
-    padding-top: 220px;
+    background: white;
+    .container{
+      padding-top: 200px;
+      background: url(../../img/6/bg-6-2.png)  no-repeat transparent;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+      background-position: 0 0;
+    }
     .text-wrap{
       @media (max-width: 992px){
         text-align: left;
@@ -35,7 +49,7 @@
       }
     }
     h3{
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       color: @blue
     }
 
