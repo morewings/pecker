@@ -1601,9 +1601,6 @@ footer label span {
   color: white;
   background-color: transparent;
 }
-.navmenu li.small {
-  margin-top: 30px;
-}
 .navmenu li.small a {
   text-transform: none;
   font-weight: normal;
