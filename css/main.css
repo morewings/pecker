@@ -1100,6 +1100,9 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   .part-2 .embed-wrap .embed-frame {
     box-shadow: none;
   }
+  .part-2 .embed-wrap .embed-frame img {
+    width: 100%;
+  }
 }
 .part-2 .tab-wrap {
   position: relative;
@@ -1373,6 +1376,11 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   background-size: 100%;
   padding-bottom: 90px;
 }
+@media (max-width: 1170px) and (min-width: 992px) {
+  .part-6 .blue-wrap .container {
+    padding-bottom: 60px;
+  }
+}
 @media (max-width: 992px) {
   .part-6 .blue-wrap .text {
     padding: 0 70px;
@@ -1403,6 +1411,12 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   background-size: 100%;
   background-position: 0 0;
 }
+@media (max-width: 1170px) and (min-width: 992px) {
+  .part-6 .white-wrap .container {
+    padding-bottom: 50px;
+    padding-top: 170px;
+  }
+}
 @media (max-width: 992px) {
   .part-6 .white-wrap .text-wrap {
     text-align: left;
@@ -1418,6 +1432,11 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   padding-bottom: 70px;
   background: url(../img/bg-7.jpg) center bottom no-repeat;
   background-size: 100%;
+}
+@media (max-width: 1170px) and (min-width: 992px) {
+  .part-7 .container {
+    padding-top: 50px;
+  }
 }
 .part-7 .text-wrap {
   background-color: #2a9edf;
@@ -1585,6 +1604,11 @@ footer label span {
   z-index: 2000;
   background-color: #222222;
 }
+@media (max-width: 1170px) and (min-width: 992px) {
+  .navmenu {
+    padding: 50px 30px 30px;
+  }
+}
 .navmenu .navmenu-nav {
   position: static;
 }
@@ -1636,6 +1660,11 @@ footer label span {
   list-style: none;
   left: 30px;
   right: 30px;
+}
+@media (max-width: 1170px) and (min-width: 992px) {
+  .navmenu .bottom-aligned {
+    bottom: 30px;
+  }
 }
 .navmenu .bottom-aligned .language {
   padding: 10px 15px;
@@ -1767,6 +1796,11 @@ footer label span {
   font-weight: bold;
   line-height: 1.2;
 }
+@media (max-width: 1170px) and (min-width: 992px) {
+  #modal-6 .left-wrap .price strong {
+    font-size: 40px;
+  }
+}
 #modal-6 .left-wrap .price .left {
   padding-right: 30px;
   border-right: 1px solid #cccccc;
@@ -1797,6 +1831,11 @@ footer label span {
   padding: 60px 75px;
   height: 631px;
 }
+@media (max-width: 1170px) and (min-width: 992px) {
+  #modal-6 .right-wrap {
+    height: 736px;
+  }
+}
 #modal-6 .right-wrap .img-wrap {
   margin-bottom: 60px;
 }
@@ -1818,6 +1857,11 @@ footer label span {
 #modal-6 .right-wrap .text strong {
   font-size: 90px;
   line-height: 1.1;
+}
+@media (max-width: 1170px) and (min-width: 992px) {
+  #modal-6 .right-wrap .text strong {
+    font-size: 60px;
+  }
 }
 .top-menu {
   background-color: transparent;
