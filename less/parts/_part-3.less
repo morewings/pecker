@@ -3,6 +3,9 @@
     background: url(../../img/pulse.png) center bottom repeat-x;
     background-size: 100%;
     padding-top: @topMarginLg;
+    @media (max-width: 992px){
+      background: none;
+    }
   }
   h2{
     margin-top: 0;
@@ -14,6 +17,8 @@
 
 .part-3{
   .discovery{
+    position: relative;
+    z-index: 2;
     h3{
       font-size: 33px;
       background: url(../../img/line.png) left bottom no-repeat;
@@ -76,6 +81,25 @@
       &:nth-child(12){
         opacity: .1;
       }
+    }
+  }
+}
+
+.part-3{
+  .remote{
+    position: relative;
+    z-index: 2;
+  }
+  .pulse-wrap{
+    position: relative;
+    .pulse{
+      position: absolute;
+      background: url(../../img/pulse.png) left bottom repeat-x;
+      background-size: auto 100%;
+      width: 100%;
+      height: 85px;
+      bottom: 30px;
+      z-index: 1;
     }
   }
 }
