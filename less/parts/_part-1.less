@@ -15,15 +15,19 @@
     @media (max-width: 992px) {
       background-image: none;
       padding-top: 0;
-      .text{
-        padding: 0 @topMarginLg;
-      }
+    }
+    @media (max-width: 768px) {
+      background: none;
     }
   }
 
   .text{
     @media (max-width: 992px) {
       padding: 0 @topMarginLg;
+    }
+    @media (max-width: 768px) {
+      padding: 0;
+      text-align: center;
     }
     h2{
       font-size: 64px;
@@ -34,6 +38,11 @@
       text-align: left;
       @media (max-width: 992px) and (min-width: 768px){
         font-size: 48px;
+      }
+      @media (max-width: 768px) {
+        font-size: 28px;
+        font-size: 9.2vw;
+        text-align: center;
       }
     }
     p{

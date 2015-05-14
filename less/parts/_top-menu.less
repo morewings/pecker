@@ -5,9 +5,18 @@
     a{
       display: block;
       text-indent: -9999px;
-      background: url(../../img/logo.png);
+      background: url(../../img/logo.svg) no-repeat;
       width: 231px;
       height: 54px;
+      &.alt{
+        background-image: url(../../img/logo-alt.svg);
+        width: 277px;
+        height: 44px;
+        margin: 0 auto;
+      }
+    }
+    @media (max-width: 768px){
+      padding: @topMarginLg/2 0;
     }
   }
   .custom-navbar-toggle{
