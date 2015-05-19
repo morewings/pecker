@@ -610,7 +610,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 @media (max-width: 1200px) and (min-width: 992px) {
   .part-1 .container {
-    background-position: 230px top;
+    background-position: 92px top;
   }
 }
 @media (max-width: 992px) {
@@ -1034,6 +1034,11 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   padding: 0 0 20px;
   text-align: center;
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .part-5 .nav-tabs > li a {
+    font-size: 15px;
+  }
+}
 .part-5 .nav-tabs > li a i,
 .part-5 .nav-tabs > li a span {
   display: inline-block;
@@ -1080,7 +1085,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 @media (max-width: 1200px) and (min-width: 992px) {
   .part-6 .blue-wrap .container {
-    padding-bottom: 60px;
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 992px) {
@@ -1203,6 +1208,11 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   background-color: #2a9edf;
   padding: 50px;
   color: white;
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+  .part-7 .text-wrap {
+    margin-top: 15px;
+  }
 }
 @media (max-width: 992px) and (min-width: 768px) {
   .part-7 .text-wrap {
