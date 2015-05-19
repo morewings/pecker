@@ -1,18 +1,27 @@
 $(document).ready(function(){
    //nav
+    var OffCanvas ={
+        init: function(){
+
+        },
+        setHeight: function(){
+
+        },
+        showMenu: function(){
+
+        },
+        hideMenu: function(){
+
+        }
+
+    };
+
     var navMenu=$('.navmenu');
     $('.navmenu .btn-wrap a').on('click', function(e){
         e.preventDefault();
-        //navMenu.toggleClass('show-menu')
         $('.navmenu').offcanvas('toggle')
     });
-/*    $('body')
-        .on('show.bs.offcanvas', function(){
-            $('#navbar-scroll').addClass('hide');
-    })
-        .on('hidden.bs.offcanvas', function(){
-            $('#navbar-scroll').removeClass('hide');
-    });*/
+
 
     //tab-drop
     $('#collapse-tabs').tabdrop({
@@ -114,7 +123,7 @@ $(document).ready(function(){
     };
 
     if(!Modernizr.touch){
-        VideoTabs.init();
+        //VideoTabs.init();
     }
 
 
