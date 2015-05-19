@@ -1,30 +1,32 @@
+
 .navmenu{
   padding: 50px 30px;
   @media (max-width: 1200px) and (min-width: 992px){
     padding: 50px 30px 30px;
   }
-  //width: 300px;
-  ////height: 100%;
+  width: 300px;
+  height: 100%;
+  bottom: 0;
   //box-sizing: border-box;
-  //position: absolute;
-  //right: -300px;
-  //top: 0;
+  position: fixed;
+  right: -300px;
+  min-height: 600px;
+  top: 0;
   z-index: 2000;
   background-color: #222222;
-  //-webkit-transition: right .4s ease-in; /** Chrome & Safari **/
-  //-moz-transition: right .4s ease-in; /** Firefox **/
-  //-o-transition: right .4s ease-in; /** Opera **/
-  //transition: right .4s ease-in;
+  -webkit-transition: right .3s ease-in; /** Chrome & Safari **/
+  -moz-transition: right .3s ease-in; /** Firefox **/
+  transition: right .3s ease-in;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
   &.show-menu{
-    //visibility: visible;
-    //display: block;
-    //right: 0;
-    //
-    //-webkit-transform: translate(0px, 0px);
-    //-moz-transform: translate(0px, 0px);
-    //-ms-transform: translate(0px, 0px);
-    //-o-transform: translate(0px, 0px);
-    //transform: translate(0px, 0px);
+    right:0;
+    visibility: visible;
+    display: block;
+
+
 
 
   }

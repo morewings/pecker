@@ -1,26 +1,28 @@
 $(document).ready(function(){
    //nav
     var OffCanvas ={
+
         init: function(){
+            //OffCanvas.setHeight();
+            OffCanvas.toggleMenu();
 
         },
         setHeight: function(){
-
+            var height = $(window).height();
+            console.log(height);
+            $('.navmenu').css('height',height);
         },
-        showMenu: function(){
-
-        },
-        hideMenu: function(){
-
+        toggleMenu: function(){
+            $('.custom-navbar-toggle').on('click', function(e){
+                e.preventDefault();
+                $('.navmenu').toggleClass('show-menu');
+            })
         }
 
     };
 
-    var navMenu=$('.navmenu');
-    $('.navmenu .btn-wrap a').on('click', function(e){
-        e.preventDefault();
-        $('.navmenu').offcanvas('toggle')
-    });
+    OffCanvas.init();
+    
 
 
     //tab-drop
