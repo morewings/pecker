@@ -1,6 +1,16 @@
 .top-menu{
-  background-color: transparent;
   padding-top: 30px;
+  &.navbar-fixed-top{
+    background-color: transparent;
+  }
+  &.navbar-default{
+    background: transparent;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+  }
   .logo{
     a{
       display: block;
@@ -29,7 +39,7 @@
     }
 
   }
-  &.sticky{
+  &.navbar-fixed-top.sticky{
     padding: 10px 0;
     background-color: #fff;
     .logo{

@@ -1675,8 +1675,18 @@ footer label span {
   }
 }
 .top-menu {
-  background-color: transparent;
   padding-top: 30px;
+}
+.top-menu.navbar-fixed-top {
+  background-color: transparent;
+}
+.top-menu.navbar-default {
+  background: transparent;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1000;
 }
 .top-menu .logo a {
   display: block;
@@ -1705,24 +1715,24 @@ footer label span {
 .top-menu .custom-navbar-toggle:hover {
   text-decoration: none;
 }
-.top-menu.sticky {
+.top-menu.navbar-fixed-top.sticky {
   padding: 10px 0;
   background-color: #fff;
 }
-.top-menu.sticky .logo {
+.top-menu.navbar-fixed-top.sticky .logo {
   padding-top: 12px;
 }
-.top-menu.sticky .logo a {
+.top-menu.navbar-fixed-top.sticky .logo a {
   text-indent: -9999px;
   width: 95px;
   height: 15px;
   background: url(../img/logo-small.svg) no-repeat;
 }
-.top-menu.sticky .btn-default {
+.top-menu.navbar-fixed-top.sticky .btn-default {
   background-color: #2a9edf;
   color: white;
   border-color: #2a9edf;
 }
-.top-menu.sticky .custom-navbar-toggle {
+.top-menu.navbar-fixed-top.sticky .custom-navbar-toggle {
   color: #2a9edf;
 }

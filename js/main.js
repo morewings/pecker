@@ -31,9 +31,10 @@ $(document).ready(function(){
     });
 
     //sticky menu
+    var topMenu = $('.top-menu');
     if (!Modernizr.touch){
-        var topMenu = $('.top-menu'),
-            navHeight = topMenu.outerHeight();
+        var navHeight = topMenu.outerHeight();
+        topMenu.addClass('navbar-fixed-top');
         function scrollCheck(){
             ($(window).scrollTop() > navHeight) ? topMenu.addClass('sticky') : topMenu.removeClass('sticky');
         }
@@ -42,6 +43,10 @@ $(document).ready(function(){
             scrollCheck();
         });
     }
+    if (Modernizr.touch){
+        topMenu.addClass('navbar-default');
+    }
+
 
     //video load
 
