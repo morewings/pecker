@@ -78,7 +78,7 @@ h3 {
 }
 p {
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.66;
   font-weight: 300;
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -931,7 +931,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 .part-4 .container {
   padding-top: 70px;
-  padding-bottom: 90px;
+  padding-bottom: 100px;
   background: url(../img/bg-4.jpg) right bottom no-repeat;
   background-size: auto 85%;
 }
@@ -970,7 +970,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   padding-top: 70px;
 }
 .part-5 h2 {
-  margin-top: 0;
+  margin-bottom: 70px;
 }
 .part-5 .embed-wrap {
   overflow: hidden;
@@ -1020,21 +1020,19 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   margin-bottom: 0;
   border-bottom: 1px solid #e3e3e3;
 }
-@media (max-width: 992px) {
-  .part-5 .nav-tabs > li {
-    width: 50%;
-    text-align: center;
-  }
-  .part-5 .nav-tabs > li a {
-    padding: 10px 0 !important;
-  }
+.part-5 .nav-tabs > li.ios {
+  width: 60%;
+}
+.part-5 .nav-tabs > li.usb {
+  width: 40%;
 }
 .part-5 .nav-tabs > li a {
   color: #999999;
-  font-weight: 300;
+  font-weight: bold;
   font-size: 16px;
   border: none;
-  padding-bottom: 20px;
+  padding: 0 0 20px;
+  text-align: center;
 }
 .part-5 .nav-tabs > li a i,
 .part-5 .nav-tabs > li a span {
@@ -1067,7 +1065,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 .part-5 .nav-tabs > li.active > a:hover,
 .part-5 .nav-tabs > li.active > a:focus {
   opacity: 1;
-  font-weight: bold;
+  color: black;
 }
 .part-6 .blue-wrap {
   background: #2a9edf;
@@ -1078,7 +1076,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   background-position: 0 100px;
   -webkit-background-size: 100%;
   background-size: 100%;
-  padding-bottom: 90px;
+  padding-bottom: 75px;
 }
 @media (max-width: 1200px) and (min-width: 992px) {
   .part-6 .blue-wrap .container {
