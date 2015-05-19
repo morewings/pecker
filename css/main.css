@@ -65,6 +65,7 @@ h2 {
   font-size: 32px;
   margin-top: 0;
   margin-bottom: 50px;
+  line-height: 1;
 }
 h3 {
   margin-top: 0;
@@ -73,6 +74,7 @@ h3 {
   letter-spacing: 3px;
   font-size: 16px;
   font-weight: bold;
+  line-height: 1;
 }
 p {
   font-size: 15px;
@@ -596,13 +598,13 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   background-color: #2a9edf;
 }
 .part-1 .container {
-  padding-top: 130px;
-  padding-bottom: 70px;
+  padding-top: 245px;
+  padding-bottom: 30px;
   position: relative;
   overflow: hidden;
   background-image: url(../img/bg-1.jpg);
   background-repeat: no-repeat;
-  background-position: 440px top;
+  background-position: 290px top;
   background-size: contain;
 }
 @media (max-width: 1200px) and (min-width: 992px) {
@@ -660,8 +662,8 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 .part-1 .text .mouse-wrap {
   text-align: center;
-  padding-top: 20px;
-  font-size: 24px;
+  padding-top: 40px;
+  font-size: 36px;
   color: white;
   cursor: default;
 }
@@ -674,26 +676,6 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 .affix {
   z-index: 1000;
-}
-#navbar-scroll ul {
-  border: none;
-}
-#navbar-scroll li {
-  float: none;
-  margin-bottom: 30px;
-}
-#navbar-scroll li a {
-  padding: 0;
-  display: block;
-  width: 8px;
-  height: 8px;
-  background-color: #025e91;
-  border-radius: 50em;
-  opacity: .4;
-}
-#navbar-scroll li.active a {
-  border: none;
-  opacity: 1;
 }
 .part-2 {
   overflow-y: hidden;
