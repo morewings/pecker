@@ -624,11 +624,6 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
     background: none;
   }
 }
-@media (max-width: 992px) {
-  .part-1 .text {
-    padding: 0 70px;
-  }
-}
 @media (max-width: 768px) {
   .part-1 .text {
     padding: 0;
@@ -645,7 +640,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 @media (max-width: 992px) and (min-width: 768px) {
   .part-1 .text h2 {
-    font-size: 48px;
+    font-size: 54px;
   }
 }
 @media (max-width: 768px) {
