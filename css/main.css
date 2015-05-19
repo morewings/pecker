@@ -796,7 +796,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   border-bottom: 3px solid white;
 }
 .part-3 .container {
-  background: url(../img/pulse.png) center bottom repeat-x;
+  background: url(../img/pulse.png) center 440px repeat-x;
   background-size: 100%;
   padding-top: 70px;
 }
@@ -806,7 +806,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   }
 }
 .part-3 h2 {
-  margin-top: 0;
+  margin-bottom: 30px;
 }
 .part-3 h3 {
   color: #2a9edf;
@@ -817,27 +817,30 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 .part-3 .discovery h3 {
   font-size: 33px;
-  background: url(../img/line.png) left bottom no-repeat;
+  background: url(../img/line.svg) left bottom no-repeat;
   background-size: contain;
   font-weight: 300;
+  text-transform: none;
+  letter-spacing: 0;
   color: #2a9edf;
-  padding: 0 0 12px 12px;
+  padding: 0 0 25px 12px;
   margin-bottom: 30px;
 }
 .part-3 .discovery dd,
 .part-3 .discovery dt {
   float: left;
   margin-bottom: 20px;
+  line-height: 17px;
 }
 .part-3 .discovery dd.accent,
 .part-3 .discovery dt.accent {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .part-3 .discovery dd {
   clear: left;
   min-width: 60px;
   margin-right: 30px;
-  font-weight: bold;
+  font-weight: normal;
   color: #2a9edf;
   font-size: 14px;
 }
@@ -847,7 +850,6 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   }
 }
 .part-3 .discovery dd.accent {
-  font-weight: bold;
   color: black;
 }
 .part-3 .discovery dd:nth-child(7) {
@@ -870,8 +872,8 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   }
 }
 .part-3 .discovery dt.accent {
-  font-weight: bold;
   opacity: 1;
+  font-size: 20px;
 }
 .part-3 .discovery dt:nth-child(8) {
   opacity: .3;
@@ -885,6 +887,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 .part-3 .remote {
   position: relative;
   z-index: 2;
+  padding-top: 120px;
 }
 @media (max-width: 768px) {
   .part-3 .remote {
