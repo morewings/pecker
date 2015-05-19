@@ -1182,10 +1182,9 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   color: #2a9edf;
 }
 .part-7 .container {
-  padding-top: 180px;
-  padding-bottom: 70px;
-  background: url(../img/bg-7.jpg) center bottom no-repeat;
-  background-size: 100%;
+  padding-bottom: 35px;
+  background: url(../img/bg-7.jpg) center top no-repeat;
+  background-size: contain;
 }
 @media (max-width: 1200px) and (min-width: 992px) {
   .part-7 .container {
@@ -1200,6 +1199,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   }
 }
 .part-7 .text-wrap {
+  margin-top: 150px;
   background-color: #2a9edf;
   padding: 50px;
   color: white;
@@ -1214,7 +1214,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 .part-8 {
   padding-top: 70px;
-  padding-bottom: 120px;
+  padding-bottom: 110px;
 }
 @media (max-width: 992px) {
   .part-8 {
@@ -1225,6 +1225,9 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   .part-8 .text-wrap {
     padding-bottom: 70px;
   }
+}
+.part-8 h2 {
+  margin-bottom: 70px;
 }
 .part-8 .img-wrap {
   text-align: center;
@@ -1243,7 +1246,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   text-align: center;
 }
 .part-9 {
-  padding-top: 120px;
+  padding-top: 100px;
   background: #2a9edf;
   position: relative;
 }
@@ -1259,6 +1262,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 .part-9 h2 {
   color: white;
+  margin-bottom: 35px;
 }
 .part-9 .btn-wrap,
 .part-9 .soc-wrap {
@@ -1280,8 +1284,11 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   text-decoration: none;
   background-color: #335b9a;
 }
+.part-9 .btn-default {
+  padding-top: 12px;
+}
 .part-10 {
-  padding: 70px 0;
+  padding: 60px 0;
   background-color: #e6eced;
 }
 @media (max-width: 992px) {
