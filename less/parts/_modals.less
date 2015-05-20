@@ -1,27 +1,28 @@
 .modal{
   .modal-super{
-    @media (min-width: 768px) {
-      width: 750px;
-    }
-    @media (min-width: 992px) {
-      width: 970px;
-    }
-    @media (min-width: 1200px) {
-      width: 1170px;
-    }
+    width: 100%;
     margin-top: 0;
+    @media (max-width: 768px) {
+      margin: 0;
+    }
   }
   .modal-dialog{
     z-index: 3000;
   }
   .modal-content{
-    background-color: #e6eced;
+    //background-color: #e6eced;
+    background-color: white;
     border-radius: 0;
-    padding: 50px;
+    padding: 45px;
+    box-shadow: none;
+
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
     .close{
       opacity: .5;
-      font-size: 36px;
-      margin-top: -10px;
+      font-size: 24px;
+
     }
   }
 
@@ -31,6 +32,7 @@
   .modal-footer{
     border-top: none;
     text-align: center;
+    padding-top: 25px;
     .btn{
       display: inline-block;
     }
@@ -46,9 +48,6 @@
 }
 
 #modal-6{
-  .close{
-
-  }
   .modal-body{
     padding: 0;
   }
@@ -61,16 +60,30 @@
       z-index: 1000;
       color: white;
       opacity: 1;
+      @media (max-width: 992px) {
+        color: #808080;
+      }
     }
   }
   .left-wrap{
     padding: 60px 75px;
+    @media (max-width: 992px){
+      padding: 60px 115px;
+    }
+    @media (max-width: 768px) {
+      padding: 65px 35px;
+    }
     h4{
       text-transform: none;
       font-size: 40px;
       letter-spacing: 0;
       margin-bottom: 40px;
       font-weight: bold;
+      @media (max-width: 768px) {
+        line-height: 1.2;
+        font-size: 25px;
+      }
+
     }
     .price{
       margin-bottom: 30px;
@@ -89,7 +102,11 @@
         @media (max-width: 1200px) and (min-width: 992px){
           font-size: 40px;
         }
+        @media (max-width: 768px) {
+          font-size: 26px;
+        }
       }
+
       .left{
         padding-right: 30px;
         border-right: 1px solid #cccccc;
@@ -113,23 +130,55 @@
       font-size: 32px;
       .lightFont;
       height: 55px;
+      @media (max-width: 992px){
+        max-width: 520px;
+      }
     }
     .info{
       margin-bottom: 30px;
+      @media (max-width: 992px){
+        max-width: 520px;
+      }
+    }
+    .btn-modal{
+      @media (max-width: 768px){
+        display: block;
+        float: none;
+        margin: 0 auto;
+      }
     }
   }
   .right-wrap{
     background: @blue;
     padding: 60px 75px;
-    height: 631px;
+    height: 688px;
+    @media (max-width: 992px){
+      padding: 50px 50px 20px;
+      height: auto;
+    }
+    @media (max-width: 768px) {
+      padding: 65px 35px;
+    }
     @media (max-width: 1200px) and (min-width: 992px){
       height: 736px;
     }
     .img-wrap{
       margin-bottom: 60px;
+      @media (max-width: 992px) and (min-width: 768px){
+        float: left;
+        width: 50%;
+        img{
+          width: 100%;
+        }
+      }
     }
     .text{
       text-align: center;
+      @media (max-width: 992px) and (min-width: 768px){
+        float: left;
+        width: 50%;
+        padding-top: 100px;
+      }
       small,
       strong{
         display: block;
@@ -146,6 +195,9 @@
         font-size: 90px;
         line-height: 1.1;
         @media (max-width: 1200px) and (min-width: 992px){
+          font-size: 60px;
+        }
+        @media (max-width: 768px) {
           font-size: 60px;
         }
       }
