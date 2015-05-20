@@ -133,3 +133,23 @@
 
   
 }
+
+#top-link-block{
+  z-index: 2000;
+  &.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px; /* negative of the offset - height of link element */
+    right: 100px; /* padding from the left side of the window */
+  }
+  &.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 50px; /* height of link element */
+    right: 100px; /* padding from the left side of the window */
+  }
+  a{
+    display: block;
+    width: 55px;
+    height: 55px;
+    background: url(../../img/top.svg) no-repeat transparent;
+  }
+}

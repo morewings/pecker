@@ -73,6 +73,28 @@
   }
 }
 
-.affix{
+.affix-custom{
   z-index: 1000;
+  top: 250px;
+  left: 50px;
+  position: fixed;
+  li{
+    margin-bottom: 20px;
+    a{
+      display: block;
+      width: 6px;
+      height: 6px;
+      background-color: #025e91;
+      border-radius: 50%;
+      padding: 0;
+      opacity: .4;
+    }
+    &.active{
+      a{
+        opacity: 1;
+      }
+
+    }
+  }
 }
+

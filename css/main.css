@@ -676,8 +676,26 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   letter-spacing: 0;
   padding: 10px 25px 12px;
 }
-.affix {
+.affix-custom {
   z-index: 1000;
+  top: 250px;
+  left: 50px;
+  position: fixed;
+}
+.affix-custom li {
+  margin-bottom: 20px;
+}
+.affix-custom li a {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #025e91;
+  border-radius: 50%;
+  padding: 0;
+  opacity: .4;
+}
+.affix-custom li.active a {
+  opacity: 1;
 }
 .part-2 {
   overflow-y: hidden;
@@ -1361,8 +1379,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   }
 }
 .part-10 button {
-  background: transparent;
-  color: #2a9edf;
+  background: url(../img/right.svg) no-repeat transparent;
   border: none;
   font-size: 25px;
   line-height: 1;
@@ -1549,6 +1566,31 @@ footer label select {
 }
 .navmenu .bottom-aligned .social a {
   display: inline-block;
+}
+#top-link-block {
+  z-index: 2000;
+}
+#top-link-block.affix-top {
+  position: absolute;
+  /* allows it to "slide" up into view */
+  bottom: -82px;
+  /* negative of the offset - height of link element */
+  right: 100px;
+  /* padding from the left side of the window */
+}
+#top-link-block.affix {
+  position: fixed;
+  /* keeps it on the bottom once in view */
+  bottom: 50px;
+  /* height of link element */
+  right: 100px;
+  /* padding from the left side of the window */
+}
+#top-link-block a {
+  display: block;
+  width: 55px;
+  height: 55px;
+  background: url(../img/top.svg) no-repeat transparent;
 }
 .modal .modal-super {
   margin-top: 0;
