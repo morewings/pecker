@@ -144,5 +144,16 @@ $(document).ready(function(){
         }
     }
 
+    //usb wifi test
+
+    $('.link-wrap').on('click', 'a', function(e){
+        e.preventDefault();
+        var className = $(this).attr('class');
+        $('.part-6 .highlight').removeClass('invisible');
+        $('.part-6 .highlight span').addClass('hidden');
+        $('.part-6 .highlight .'+className).removeClass('hidden');
+
+    })
+
 
 });
