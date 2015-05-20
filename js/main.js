@@ -34,7 +34,7 @@ $(document).ready(function(){
     var topMenu = $('.top-menu');
     if (!Modernizr.touch){
         var navHeight = topMenu.outerHeight();
-        topMenu.addClass('navbar-fixed-top');
+        //topMenu.addClass('navbar-fixed-top');
         function scrollCheck(){
             ($(window).scrollTop() > navHeight) ? topMenu.addClass('sticky') : topMenu.removeClass('sticky');
         }
@@ -130,7 +130,7 @@ $(document).ready(function(){
     };
 
     if(!Modernizr.touch){
-        VideoTabs.init();
+        //VideoTabs.init();
     }
 
 

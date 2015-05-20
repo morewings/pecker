@@ -10,10 +10,43 @@ footer{
     background: url(../../img/logo-small.svg) no-repeat;
     margin-right: 30px;
   }
+  form{
+    float: right;
+    //@media (max-width: 768px){
+    //  float: none;
+    //  margin: 20px 0;
+    //}
+  }
   label{
     font-weight: normal;
     span{
       margin-right: 10px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .select-wrap{
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      width: 150px;
+      overflow: hidden;
+      position: relative;
+      margin-left: 10px;
+      .caret{
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        border-top-color: black;
+      }
+    }
+
+    select{
+      background-color: white;
+      color: inherit;
+      font-weight: normal;
+      border: none;
+      width: 170px;
+      padding: 5px 10px;
+      cursor: pointer;
     }
   }
 }

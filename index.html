@@ -358,7 +358,7 @@
                     <div class="pulse visible-xs"></div>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-7 col-md-pull-4 col-sm-pull-5">
-                    <div class="discovery">
+                    <div class="discovery hidden-xs">
                         <h3>Диксавери</h3>
                         <dl class="clearfix">
                             <dd>Фильмы</dd>
@@ -375,6 +375,7 @@
                             <dt>Discovery: В поисках суперлюдей</dt>
                         </dl>
                     </div>
+                    <img src="./img/3/disc.svg" alt="" class="img-responsive visible-xs disc-alt"/>
                 </div>
 
                 <div class="clearfix visible-sm-block pulse-wrap">
@@ -618,19 +619,22 @@
 
     <footer>
         <div class="container">
-            <div class="col-md-4 col-sm-5 col-xs-4">
+            <div class="col-md-4 col-sm-5 col-xs-6">
                 <a href="#" class="logo hidden-xs"></a>
                 <a href="#">Партнерство</a>
             </div>
-            <div class="col-md-3 col-md-offset-5 col-sm-4 col-sm-offset-3 col-xs-8">
-                <form action="#" class="pull-right">
+            <div class="col-md-4 col-md-offset-4 col-sm-5 col-sm-offset-2 col-xs-6">
+                <form action="#">
                     <label>
-                        <span>Язык:</span>
-                        <select>
-                            <option value="volvo">Русский</option>
-                            <option value="saab">Английский</option>
-                            <option value="mercedes">Еще какой-то</option>
-                        </select>
+                        <span class="hidden-xs">Язык:</span>
+                        <span class="select-wrap">
+                            <select name="lang">
+                                <option value="Русский">Русский</option>
+                                <option value="Русский">Русский</option>
+                                <option value="Русский">Русский</option>
+                            </select>
+                            <b class="caret"></b>
+                        </span>
                     </label>
                 </form>
             </div>
