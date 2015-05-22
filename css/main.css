@@ -1549,7 +1549,7 @@ footer label select {
   font-size: 15px;
   letter-spacing: 1px;
   font-weight: bold;
-  color: #999999;
+  color: #666;
 }
 .navmenu li a:hover,
 .navmenu li a:active,
@@ -1579,14 +1579,24 @@ footer label select {
   border-width: 2px;
   box-shadow: none;
   line-height: 1;
+  border-color: #666;
+  color: #666;
   display: inline-block;
 }
+.navmenu .btn-wrap .btn-default:hover {
+  border-color: white;
+  color: white;
+}
 .navmenu .btn-wrap .close {
-  font-size: 24px !important;
-  color: white !important;
-  opacity: 1 !important;
-  padding-top: 5px !important;
-  padding-left: 0 !important;
+  font-size: 24px;
+  color: #666;
+  opacity: 1;
+  padding-top: 5px;
+  padding-left: 0;
+  text-shadow: none;
+}
+.navmenu .btn-wrap .close:hover {
+  color: white;
 }
 .navmenu .bottom-aligned {
   position: absolute;
