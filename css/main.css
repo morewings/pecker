@@ -1437,10 +1437,12 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   border-bottom: 2px solid #2a9edf;
   color: #2a9edf;
   font-size: 22px;
-  height: 30px;
+  height: 40px;
   width: 290px;
   padding-right: 30px;
   background-color: transparent;
+  padding-bottom: 10px;
+  line-height: 1;
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .part-10 input {
