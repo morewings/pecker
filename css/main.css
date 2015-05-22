@@ -663,6 +663,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 .part-1 .text a:not(.btn) {
   color: white;
   border-bottom: 1px solid white;
+  font-weight: bold;
 }
 .part-1 .text a:not(.btn):hover {
   text-decoration: none;
@@ -717,6 +718,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 .part-2 p a {
   color: #2a9edf;
   border-bottom: 1px solid #2a9edf;
+  font-weight: bold;
 }
 .part-2 p a:hover {
   text-decoration: none;
@@ -976,6 +978,10 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 .part-4 p {
   color: white;
+}
+.part-4 p a {
+  color: #2a9edf;
+  font-weight: bold;
 }
 .part-5 {
   overflow-y: hidden;
