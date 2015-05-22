@@ -1278,10 +1278,17 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
     width: 21%;
   }
 }
+.part-7 {
+  background: url(../img/bg-7.jpg) center top no-repeat;
+  background-size: 100% auto;
+}
+@media (max-width: 992px) {
+  .part-7 {
+    background: none;
+  }
+}
 .part-7 .container {
   padding-bottom: 35px;
-  background: url(../img/bg-7.jpg) center top no-repeat;
-  background-size: contain;
 }
 @media (max-width: 1200px) and (min-width: 992px) {
   .part-7 .container {
