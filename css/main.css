@@ -808,7 +808,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   border-bottom: 3px solid white;
 }
 .part-3 .container {
-  background: url(../img/pulse.png) center 440px repeat-x;
+  background: url(../img/3/pulse.svg) center 460px repeat-x;
   background-size: 100%;
   padding-top: 70px;
 }
@@ -922,7 +922,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 .part-3 .pulse {
   position: absolute;
-  background: url(../img/pulse.png) left bottom repeat-x;
+  background: url(../img/3/pulse.svg) left bottom repeat-x;
   background-size: auto 100%;
   left: 0;
   right: 0;
