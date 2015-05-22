@@ -1876,13 +1876,13 @@ footer label select {
 #modal-6 .right-wrap .img-wrap {
   margin-bottom: 60px;
 }
+#modal-6 .right-wrap .img-wrap img {
+  width: 100%;
+}
 @media (max-width: 992px) and (min-width: 768px) {
   #modal-6 .right-wrap .img-wrap {
     float: left;
     width: 50%;
-  }
-  #modal-6 .right-wrap .img-wrap img {
-    width: 100%;
   }
 }
 #modal-6 .right-wrap .text {
