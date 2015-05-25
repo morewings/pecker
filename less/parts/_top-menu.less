@@ -1,5 +1,9 @@
 .top-menu{
   padding-top: 30px;
+  box-shadow: none;
+  @media (max-width: 768px){
+    padding-top: 10px;
+  }
   &.navbar-fixed-top{
     background-color: transparent;
   }
@@ -20,13 +24,14 @@
       height: 54px;
       &.alt{
         background-image: url(../../img/logo-alt.svg);
-        width: 277px;
-        height: 44px;
+        background-size: contain;
+        width: 140px;
+        height: 25px;
         margin: 0 auto;
       }
     }
     @media (max-width: 768px){
-      padding: @topMarginLg/2 0;
+      padding: 0;
     }
   }
   .custom-navbar-toggle{
