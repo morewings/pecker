@@ -1576,6 +1576,7 @@ footer label select {
   width: 170px;
   padding: 5px 10px;
   cursor: pointer;
+  height: 30px;
 }
 .navmenu {
   padding: 50px 30px;
@@ -1712,6 +1713,7 @@ footer label select {
   width: 170px;
   padding: 5px 10px;
   cursor: pointer;
+  height: 30px;
 }
 .navmenu .bottom-aligned .language:hover select {
   color: white;
