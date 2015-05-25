@@ -18,7 +18,8 @@
 }
 
 
-.btn-default {
+.btn-default,
+.btn-default:focus{
   background: transparent;
   color: white;
   font-size: 16px;
@@ -31,21 +32,16 @@
   border-width: 2px;
   box-shadow: none;
   line-height: 1;
-  &:hover{
+  &:hover,
+  &:active{
     background-color: white;
     color: @blue;
     border-color: white;
   }
-  &:focus{
-    outline: none;
-
-    background: transparent;
-    border-color: white;
-    color: white;
-  }
 }
 
-.btn-dimmed {
+.btn-dimmed,
+.btn-dimmed:focus{
   background: transparent;
   color: #999999;
   font-size: 15px;
@@ -65,7 +61,8 @@
 
 }
 
-.btn-modal{
+.btn-modal,
+.btn-modal:focus{
   background: @blue;
   border-radius: 50em;
   color: white;
@@ -74,13 +71,9 @@
   letter-spacing: 1px;
   padding: 9px 30px;
   text-transform: uppercase;
-  &:hover{
+  &:hover,
+  &:active{
     background: #015d90;
-    color: white;
-  }
-  &:focus{
-    outline: none;
-    background: transparent;
     color: white;
   }
 }
