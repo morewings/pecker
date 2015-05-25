@@ -695,6 +695,9 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 .affix-custom li.active a {
   opacity: 1;
 }
+.touch #navbar-scroll {
+  display: none !important;
+}
 .part-2 {
   overflow-y: hidden;
   background-color: #e6eced;
@@ -733,7 +736,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   }
 }
 .part-2 .embed-wrap .embed-frame {
-  box-shadow: -5px 15px 0 5px #c9c9c9, -15px 30px 0 5px #e3e3e3;
+  box-shadow: -5px 15px 0 5px #d9dbdc, -15px 30px 0 5px #e5e8e8;
 }
 @media (max-width: 992px) {
   .part-2 .embed-wrap .embed-frame {
@@ -1059,7 +1062,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .part-5 .nav-tabs > li a {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 .part-5 .nav-tabs > li a i,
@@ -1294,7 +1297,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   }
 }
 .part-7 .container {
-  padding-bottom: 35px;
+  padding-bottom: 80px;
 }
 @media (max-width: 1200px) and (min-width: 992px) {
   .part-7 .container {
