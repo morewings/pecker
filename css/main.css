@@ -1349,8 +1349,39 @@ footer label select {
 .navmenu .bottom-aligned .social a {
   display: inline-block;
 }
+.no-touch .navmenu .bottom-aligned .language .select-wrap {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  width: 150px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 10px;
+}
+.no-touch .navmenu .bottom-aligned .language .select-wrap .caret {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  border-top-color: white;
+}
+.no-touch .navmenu .bottom-aligned .language select {
+  background-color: #222222;
+  color: inherit;
+  font-weight: normal;
+  border: none;
+  width: 170px;
+  padding: 5px 10px;
+  cursor: pointer;
+  height: 40px;
+}
+.no-touch .navmenu .bottom-aligned .language:hover select {
+  color: white;
+}
 .touch .bottom-aligned .language select {
+  margin-left: 10px;
   width: auto;
+  height: auto;
+  background-color: white;
+  color: black;
 }
 #top-link-block {
   z-index: 1001;
