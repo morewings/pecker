@@ -29,6 +29,11 @@
   border-width: 2px;
   box-shadow: none;
   line-height: 1;
+  &:hover{
+    background-color: white;
+    color: @blue;
+    border-color: white;
+  }
 }
 
 .btn-dimmed {
@@ -52,18 +57,12 @@
   letter-spacing: 1px;
   padding: 9px 30px;
   text-transform: uppercase;
+  &:hover{
+    background: #015d90;
+    color: white;
+  }
 }
 
-.btn-default:hover,
-.btn-default:focus {
-  background-color: #e0e0e0;
-  background-position: 0 -15px;
-}
-.btn-default:active,
-.btn-default.active {
-  background-color: #e0e0e0;
-  border-color: #dbdbdb;
-}
 .btn-default.disabled,
 .btn-default:disabled,
 .btn-default[disabled] {

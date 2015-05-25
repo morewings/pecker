@@ -121,6 +121,11 @@ a:active {
   box-shadow: none;
   line-height: 1;
 }
+.btn-default:hover {
+  background-color: white;
+  color: #2a9edf;
+  border-color: white;
+}
 .btn-dimmed {
   background: transparent;
   color: #999999;
@@ -141,15 +146,9 @@ a:active {
   padding: 9px 30px;
   text-transform: uppercase;
 }
-.btn-default:hover,
-.btn-default:focus {
-  background-color: #e0e0e0;
-  background-position: 0 -15px;
-}
-.btn-default:active,
-.btn-default.active {
-  background-color: #e0e0e0;
-  border-color: #dbdbdb;
+.btn-modal:hover {
+  background: #015d90;
+  color: white;
 }
 .btn-default.disabled,
 .btn-default:disabled,
@@ -679,6 +678,9 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   text-transform: none;
   letter-spacing: 0;
   padding: 10px 25px 12px;
+}
+.part-1 .text .btn:hover {
+  color: black;
 }
 .affix-custom {
   z-index: 1000;
@@ -1434,6 +1436,18 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   text-decoration: none;
   background-color: #335b9a;
 }
+.part-9 .soc-wrap a.fb:hover {
+  background-color: #3b5997;
+}
+.part-9 .soc-wrap a.vk:hover {
+  background-color: #4e7298;
+}
+.part-9 .soc-wrap a.gg:hover {
+  background-color: #dc4b39;
+}
+.part-9 .soc-wrap a.tw:hover {
+  background-color: #1cb4e7;
+}
 .part-9 .btn-default {
   padding-bottom: 15px;
   padding-top: 15px;
@@ -1635,6 +1649,11 @@ footer label select {
   border-color: #666;
   color: #666;
   display: inline-block;
+}
+.navmenu .btn-wrap .btn-default:hover {
+  background-color: white;
+  color: #2a9edf;
+  border-color: white;
 }
 .navmenu .btn-wrap .btn-default:hover {
   border-color: white;
