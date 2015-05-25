@@ -18,6 +18,7 @@
     }
     @media (max-width: 768px) {
       background: none;
+      padding-top: 10px;
     }
   }
 
@@ -39,8 +40,7 @@
         font-size: 54px;
       }
       @media (max-width: 768px) {
-        font-size: 28px;
-        font-size: 9.2vw;
+        font-size: 24px;
         text-align: center;
       }
     }
@@ -49,6 +49,10 @@
       font-size: 22px;
       line-height: 32px;
       margin-bottom: 40px;
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 1.66;
+      }
     }
     .mouse-wrap{
       text-align: center;
@@ -70,6 +74,9 @@
       text-transform: none;
       letter-spacing: 0;
       padding: 10px 25px 12px;
+      &:hover{
+        color: black;
+      }
     }
   }
 }
@@ -99,3 +106,6 @@
   }
 }
 
+.touch #navbar-scroll{
+  display: none !important;
+}

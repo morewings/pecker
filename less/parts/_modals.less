@@ -103,7 +103,7 @@
           font-size: 40px;
         }
         @media (max-width: 768px) {
-          font-size: 26px;
+          font-size: 24px;
         }
       }
 
@@ -111,6 +111,9 @@
         padding-right: 30px;
         border-right: 1px solid #cccccc;
         color: #999;
+        @media (max-width: 768px) {
+          padding-right: 10px;
+        }
         strong{
           text-decoration: line-through;
 
@@ -118,11 +121,14 @@
       }
       .right{
         padding-left: 30px;
+        @media (max-width: 768px) {
+          padding-left: 10px;
+        }
       }
     }
     input.form-control{
       color:@blue;
-      background: url(../../img/line-2.svg) #f4fafd bottom center no-repeat;
+      background: url(../../img/line-2.png) #f4fafd bottom center no-repeat;
       background-size: 100%;
       border: none;
       border-radius: 0;

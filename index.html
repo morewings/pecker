@@ -61,15 +61,19 @@
             <li class="language">
                 <label>
                     <span>Язык</span>
-                            <span class="select-wrap">
-                                <select name="lang" id="lang">
-                                    <option value="Русский">Русский</option>
-                                    <option value="Русский">Русский</option>
-                                    <option value="Русский">Русский</option>
-                                </select>
-                                <b class="caret"></b>
-                            </span>
-
+                    <span class="select-wrap hidden-touch">
+                        <select name="lang" id="lang">
+                            <option value="Русский">Русский</option>
+                            <option value="Русский">Русский</option>
+                            <option value="Русский">Русский</option>
+                        </select>
+                        <b class="caret"></b>
+                    </span>
+                    <select name="lang" id="lang-2" class="visible-touch-inline-block">
+                        <option value="Русский">Русский</option>
+                        <option value="Русский">Русский</option>
+                        <option value="Русский">Русский</option>
+                    </select>
                 </label>
             </li>
             <li class="social clearfix">
@@ -92,9 +96,7 @@
         </ul>
     </div>
 
-    <span id="top-link-block" class="hidden">
-        <a href="#main"></a>
-    </span><!-- /top-link-block -->
+
 
     <div class="top-menu">
         <div class="container">
@@ -102,7 +104,7 @@
 
                 <div class="menu col-md-4 col-lg-4 col-sm-5 col-md-push-8 col-sm-push-7 clearfix">
                     <a href="javascript:void(0)" class="custom-navbar-toggle pull-right" data-target=".navmenu" data-toggle="offcanvas" data-disable-scrolling="false"><i class="glyph-menu"></i></a>
-                    <a href="#" class="btn btn-default pull-right" role="button" data-toggle="modal" data-target="#modal-6">Предзаказ</a>
+                    <a href="#" class="btn btn-default pull-right hidden-xs" role="button" data-toggle="modal" data-target="#modal-6">Предзаказ</a>
                 </div>
 
                 <div class="logo col-md-4 col-lg-4 col-sm-5 col-md-pull-4 col-sm-pull-5">
@@ -484,7 +486,7 @@
                         <h3>Как подключить</h3>
                         <p>Ты еще помнишь время, когда для подключения к телевидению нужен был мастер? Вызвать его, дождаться, протянуть провода, все настроить…</p>
                         <p>Слава богу, все это в прошлом! Pecker Player – ты сможешь подключить самостоятельно. Тебе понадобится лишь соединение с интернетом.</p>
-                        <p class="highlight invisible">
+                        <p class="highlight invisible hidden-xs">
                             <span class="eth hidden">Ты можешь подключить приставку при помощи Ethernet кабеля</span>
                             <span class="wifi hidden">Ты можешь подключить приставку при помощи WiFi</span>
                         </p>
@@ -500,7 +502,8 @@
                             <a href="#" class="eth"></a>
                             <a href="#" class="wifi"></a>
                         </div>
-                        <img src="./img/6/bg-6-1-sm.png" alt="" class="img-responsive"/>
+                        <img src="./img/6/bg-6-1-sm.png" alt="" class="img-responsive visible-sm"/>
+                        <img src="./img/6/bg-6-1-xs.png" alt="" class="img-responsive visible-xs"/>
                     </div>
                 </div>
             </div>
@@ -509,7 +512,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 visible-sm visible-xs img-wrap">
-                        <img src="./img/6/bg-6-2-sm.png" alt="" class="img-responsive"/>
+                        <img src="./img/6/bg-6-2-sm.png" alt="" class="img-responsive visible-sm"/>
+                        <img src="./img/6/bg-6-2-xs.png" alt="" class="img-responsive visible-xs"/>
                     </div>
                     <div class="clearfix visible-xs visible-sm"></div>
                     <div class="col-md-3 col-lg-3 col-md-offset-2 col-lg-offset-2 small-block clearfix">
@@ -612,13 +616,17 @@
                 <div class="col-md-12 btn-wrap">
                     <a href="#" class="btn btn-default" data-toggle="modal" data-target="#modal-6">Сделать предзаказ</a>
                 </div>
-                <div class="soc-wrap col-md-12">
-                    <a href="#"><i class="glyph-vk"></i></a>
-                    <a href="#"><i class="glyph-facebook"></i></a>
-                    <a href="#"><i class="glyph-twitter"></i></a>
-                    <a href="#"><i class="glyph-google-plus"></i></a>
+                <div class="soc-wrap col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                    <a class="vk" href="#"><i class="glyph-vk"></i></a>
+                    <a class="fb" href="#"><i class="glyph-facebook"></i></a>
+                    <a class="tw" href="#"><i class="glyph-twitter"></i></a>
+                    <a class="gg" href="#"><i class="glyph-google-plus"></i></a>
                 </div>
-
+                <div class="col-md-1 col-sm-1 hidden-xs">
+                    <span id="top-link-block">
+                        <a href="#main"></a>
+                    </span><!-- /top-link-block -->
+                </div>
 
             </div>
         </div>
@@ -655,7 +663,7 @@
                 <form action="#">
                     <label>
                         <span class="hidden-xs">Язык:</span>
-                        <span class="select-wrap">
+                        <span class="select-wrap hidden-touch">
                             <select name="lang">
                                 <option value="Русский">Русский</option>
                                 <option value="Русский">Русский</option>
@@ -663,6 +671,11 @@
                             </select>
                             <b class="caret"></b>
                         </span>
+                        <select name="lang" class="visible-touch-inline-block">
+                            <option value="Русский">Русский</option>
+                            <option value="Русский">Русский</option>
+                            <option value="Русский">Русский</option>
+                        </select>
                     </label>
                 </form>
             </div>

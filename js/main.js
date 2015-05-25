@@ -34,7 +34,8 @@ $(document).ready(function(){
     var topMenu = $('.top-menu');
     if (!Modernizr.touch){
         var navHeight = topMenu.outerHeight();
-        topMenu.addClass('navbar-fixed-top');
+        //topMenu.addClass('navbar-fixed-top');
+        topMenu.addClass('navbar-default');
         function scrollCheck(){
             ($(window).scrollTop() > navHeight) ? topMenu.addClass('sticky') : topMenu.removeClass('sticky');
         }
@@ -133,16 +134,6 @@ $(document).ready(function(){
         //VideoTabs.init();
     }
 
-
-    //scroll to top
-    if(!Modernizr.touch){
-        if ( ($(window).height() + 100) < $(document).height() ) {
-            $('#top-link-block').removeClass('hidden').affix({
-                // how far to scroll down before link "slides" into view
-                offset: {top:100}
-            });
-        }
-    }
 
     //usb wifi test
 
