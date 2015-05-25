@@ -567,6 +567,15 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 @-ms-viewport {
   width: auto !important;
 }
+.no-touch .visible-touch-inline-block {
+  display: none !important;
+}
+.touch .visible-touch-inline-block {
+  display: inline-block !important;
+}
+.touch .hidden-touch {
+  display: none !important;
+}
 /*!
  * Tab drop for Bootstrap
  *
@@ -1530,6 +1539,9 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   right: 0;
   top: 0;
 }
+.part-10 button:hover {
+  background-image: url(../img/right-hover.svg);
+}
 footer {
   padding: 25px 0;
 }
@@ -1577,6 +1589,11 @@ footer label select {
   padding: 5px 10px;
   cursor: pointer;
   height: 30px;
+}
+.touch footer label select {
+  height: auto;
+  padding: 0;
+  width: auto;
 }
 .navmenu {
   padding: 50px 30px;
@@ -1659,6 +1676,7 @@ footer label select {
 .navmenu .btn-wrap .btn-default:hover {
   border-color: white;
   color: white;
+  background-color: transparent;
 }
 .navmenu .btn-wrap .close {
   font-size: 24px;
@@ -1724,6 +1742,9 @@ footer label select {
 }
 .navmenu .bottom-aligned .social a {
   display: inline-block;
+}
+.touch .bottom-aligned .language select {
+  width: auto;
 }
 #top-link-block {
   z-index: 1001;
