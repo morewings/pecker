@@ -1358,13 +1358,6 @@ footer label select {
 .no-touch .navmenu .bottom-aligned .language:hover select {
   color: white;
 }
-.touch .bottom-aligned .language select {
-  margin-left: 10px;
-  width: auto;
-  height: auto;
-  background-color: white;
-  color: black;
-}
 #top-link-block {
   z-index: 1001;
 }
