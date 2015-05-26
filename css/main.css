@@ -78,11 +78,6 @@ p {
   line-height: 1.66;
   font-weight: 300;
 }
-@media (min-width: 992px) and (max-width: 1200px) {
-  p {
-    font-size: 12px;
-  }
-}
 a,
 a:focus,
 a:hover,
@@ -302,6 +297,11 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   left: 50px;
   position: fixed;
 }
+@media (max-width: 1200px) {
+  .affix-custom {
+    left: 25px;
+  }
+}
 .affix-custom li {
   margin-bottom: 20px;
 }
@@ -390,7 +390,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
     top: 140px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .part-2 .tab-wrap .text {
     margin-bottom: 50px;
   }
@@ -436,6 +436,11 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   background: url(../img/3/pulse.svg) center 460px repeat-x;
   background-size: 100%;
   padding-top: 70px;
+}
+@media (max-width: 1200px) {
+  .part-3 .container {
+    background-position: center 500px;
+  }
 }
 @media (max-width: 992px) {
   .part-3 .container {
@@ -581,15 +586,13 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   background: url(../img/bg-4.jpg) right bottom no-repeat;
   background-size: auto 85%;
 }
-@media (max-width: 1200px) and (min-width: 992px) {
-  .part-4 .container {
-    background-size: auto 80%;
-  }
-}
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .part-4 .container {
     background: none;
     padding-bottom: 0;
+  }
+  .part-4 .container img {
+    width: 100%;
   }
 }
 .part-4 h2 {
