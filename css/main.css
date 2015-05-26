@@ -625,25 +625,8 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 .part-5 h2 {
   margin-bottom: 70px;
 }
-.part-5 .embed-wrap {
-  overflow: hidden;
-  padding: 0 30px;
-}
-@media (max-width: 992px) {
-  .part-5 .embed-wrap {
-    padding: 0;
-  }
-}
-.part-5 .embed-wrap .embed-frame {
-  box-shadow: 10px 20px 0 5px #c9c9c9, 20px 40px 0 10px #e3e3e3;
-}
-@media (max-width: 992px) {
-  .part-5 .embed-wrap .embed-frame {
-    box-shadow: none;
-  }
-}
-@media (max-width: 768px) {
-  .part-5 .embed-wrap .embed-frame img {
+@media (max-width: 1200px) {
+  .part-5 img {
     width: 100%;
   }
 }
@@ -655,7 +638,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .part-5 .tabs-wrap {
     padding: 0 15px 70px;
   }
@@ -681,8 +664,18 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 .part-5 .nav-tabs > li.ios {
   width: 60%;
 }
+@media (max-width: 1200px) and (min-width: 992px) {
+  .part-5 .nav-tabs > li.ios {
+    width: 50%;
+  }
+}
 .part-5 .nav-tabs > li.usb {
   width: 40%;
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+  .part-5 .nav-tabs > li.usb {
+    width: 50%;
+  }
 }
 .part-5 .nav-tabs > li a {
   color: #999999;
@@ -692,11 +685,6 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   padding: 0 0 20px;
   text-align: center;
 }
-@media (min-width: 992px) and (max-width: 1200px) {
-  .part-5 .nav-tabs > li a {
-    font-size: 14px;
-  }
-}
 .part-5 .nav-tabs > li a i,
 .part-5 .nav-tabs > li a span {
   display: inline-block;
@@ -704,11 +692,6 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 .part-5 .nav-tabs > li a i {
   font-size: 36px;
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  .part-5 .nav-tabs > li a {
-    padding-bottom: 10px;
-  }
 }
 .part-5 .nav-tabs > li.active > a:hover,
 .part-5 .nav-tabs > li > a:hover,

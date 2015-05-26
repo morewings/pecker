@@ -4,22 +4,9 @@
   h2{
     margin-bottom: 70px;
   }
-  .embed-wrap{
-    overflow: hidden;
-    padding: 0 30px;
-    @media (max-width: 992px){
-      padding: 0;
-    }
-    .embed-frame{
-      box-shadow: 10px 20px 0 5px #c9c9c9, 20px 40px 0 10px #e3e3e3;
-      @media (max-width: 992px){
-        box-shadow: none;
-      }
-      @media (max-width: 768px){
-        img{
-          width: 100%;
-        }
-      }
+  @media (max-width: 1200px){
+    img{
+      width: 100%;
     }
   }
   h3{
@@ -32,7 +19,7 @@
 
 .part-5{
   .tabs-wrap{
-    @media (max-width: 992px){
+    @media (max-width: 1200px){
       padding: 0 15px @topMarginLg;
     }
     @media (max-width: 768px){
@@ -51,15 +38,18 @@
 
       &.ios{
         width: 60%;
+        @media (max-width: 1200px) and (min-width: 992px){
+          width: 50%;
+        }
       }
       &.usb{
         width: 40%;
+        @media (max-width: 1200px) and (min-width: 992px){
+          width: 50%;
+        }
       }
 
-      @media (max-width: 992px){
-        
 
-      }
       a{
         color: #999999;
         font-weight: bold;
@@ -67,9 +57,6 @@
         border: none;
         padding: 0 0 20px;
         text-align: center;
-        @media (min-width: 992px) and (max-width: 1200px){
-          font-size: 14px;
-        }
         i,
         span{
           display: inline-block;
@@ -77,9 +64,6 @@
         }
         i{
           font-size: 36px;
-        }
-        @media (min-width: 992px) and (max-width: 1200px){
-          padding-bottom: 10px;
         }
 
       }
