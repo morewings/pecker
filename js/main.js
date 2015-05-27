@@ -31,11 +31,10 @@ $(document).ready(function(){
     });
 
     //sticky menu
-    var topMenu = $('.top-menu');
+    var topMenu = $('.top-menu:not(.partners)');
     if (!Modernizr.touch){
         var navHeight = topMenu.outerHeight();
-        //topMenu.addClass('navbar-fixed-top');
-        topMenu.addClass('navbar-default');
+        topMenu.addClass('navbar-fixed-top');
         function scrollCheck(){
             ($(window).scrollTop() > navHeight) ? topMenu.addClass('sticky') : topMenu.removeClass('sticky');
         }

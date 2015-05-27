@@ -1129,6 +1129,65 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 .part-10 button:hover {
   background-image: url(../img/right-hover.svg);
 }
+.part-11 {
+  background: #2a9edf;
+}
+.part-11 .container {
+  padding-top: 62px;
+  padding-bottom: 20px;
+  background: url(../img/partners/bg-11.jpg) right bottom no-repeat;
+  background-size: auto 100%;
+}
+@media (max-width: 992px) {
+  .part-11 .container {
+    background: none;
+  }
+}
+.part-11 h2 {
+  text-align: center;
+  font-size: 16px;
+  color: #015d90;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  line-height: 1;
+  margin-top: 100px;
+  margin-bottom: 85px;
+}
+@media (max-width: 768px) {
+  .part-11 h2 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+}
+.part-11 h3 {
+  margin-top: 0;
+  color: white;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 33px;
+  line-height: 1.66;
+  text-align: center;
+  margin-bottom: 75px;
+}
+@media (max-width: 768px) {
+  .part-11 h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
+.part-11 .mouse-wrap {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 36px;
+  color: white;
+  cursor: default;
+}
+.part-11 .sub-text p {
+  text-align: center;
+  font-size: 22px;
+  color: #ffffff;
+}
 footer {
   padding: 25px 0;
 }
@@ -1707,4 +1766,75 @@ footer label select {
 }
 .top-menu.navbar-fixed-top.sticky .custom-navbar-toggle {
   color: #2a9edf;
+}
+.part-12,
+.part-14,
+.part-15,
+.part-16 {
+  padding: 100px 0;
+}
+@media (max-width: 768px) {
+  .part-12,
+  .part-14,
+  .part-15,
+  .part-16 {
+    padding: 0 0 30px;
+  }
+}
+.part-12 h3,
+.part-14 h3,
+.part-15 h3,
+.part-16 h3 {
+  color: #2a9edf;
+}
+@media (max-width: 768px) {
+  .part-12 h3,
+  .part-14 h3,
+  .part-15 h3,
+  .part-16 h3 {
+    text-align: center;
+  }
+}
+.part-12 img,
+.part-14 img,
+.part-15 img,
+.part-16 img {
+  width: 100%;
+}
+.part-12 .btn,
+.part-14 .btn,
+.part-15 .btn,
+.part-16 .btn {
+  margin-top: 40px;
+}
+@media (max-width: 992px) {
+  .part-12 .btn,
+  .part-14 .btn,
+  .part-15 .btn,
+  .part-16 .btn {
+    display: block;
+    margin: 30px auto 0;
+    width: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .part-12 .img-wrap,
+  .part-14 .img-wrap,
+  .part-15 .img-wrap,
+  .part-16 .img-wrap {
+    padding: 50px;
+  }
+}
+.part-12,
+.part-15 {
+  background: #e5ebec;
+}
+.part-17 {
+  padding-bottom: 70px;
+}
+@media (max-width: 992px) {
+  .part-17 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
 }
