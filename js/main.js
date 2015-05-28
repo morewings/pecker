@@ -179,4 +179,15 @@ $(document).ready(function(){
         SoundAnim.init();
     }
 
+    //usb/ios switch bydlocode edition
+
+    $('#ios-switch').on('click', function(){
+        $('.ios-images').removeClass('hidden');
+        $('.usb-images').addClass('hidden');
+    });
+    $('#usb-switch').on('click', function(){
+        $('.usb-images').removeClass('hidden');
+        $('.ios-images').addClass('hidden');
+    })
+
 });
