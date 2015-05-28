@@ -689,7 +689,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   height: 60px;
   margin-left: -30px;
   margin-top: -30px;
-  top: 52%;
+  top: 50%;
   transition-property: top, width, height, margin-left, margin-top;
   transition-duration: .5s;
   transition-delay: 0s, .5s, .5s, .5s, .5s;
@@ -698,15 +698,15 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   -webkit-animation-name: sound-anim;
   -ms-animation-name: sound-anim;
   animation-name: sound-anim;
-  animation-duration: 2.5s;
   -webkit-animation-duration: 2.5s;
   -ms-animation-duration: 2.5s;
-  animation-iteration-count: 1;
+  animation-duration: 2.5s;
   -webkit-animation-iteration-count: 1;
   -ms-animation-iteration-count: 1;
-  animation-timing-function: step-end;
+  animation-iteration-count: 1;
   -webkit-animation-timing-function: step-end;
   -ms-animation-timing-function: step-end;
+  animation-timing-function: step-end;
   background: url(../img/animation/anim-bg.png) 0 0 repeat;
 }
 .no-touch .part-3 .trigger.sound-end {
