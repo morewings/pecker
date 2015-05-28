@@ -143,7 +143,40 @@ $(document).ready(function(){
         $('.part-6 .highlight span').addClass('hidden');
         $('.part-6 .highlight .'+className).removeClass('hidden');
 
-    })
+    });
 
+    //animation
+
+    var SoundAnim = {
+        init: function(){
+            SoundAnim.clickWatcher();
+        },
+        clickWatcher: function () {
+            $('.trigger').on('click', function(e){
+                e.preventDefault();
+                $(this).addClass('move');
+
+                SoundAnim.transitionWatcher1(this);
+                $('.animation .trigger').off('click');
+            })
+        },
+        transitionWatcher1: function(target){
+            $(target).on('transitionend webkitTransitionEnd MSTransitionEnd', function(){
+                $(target).addClass('sound');
+                $(target).off('transitionend webkitTransitionEnd MSTransitionEnd');
+                SoundAnim.transitionWatcher2(target);
+            })
+
+        },
+        transitionWatcher2: function(target){
+            $(target).on('animationend MSAnimationEnd webkitAnimationEnd', function(){
+                $(target).addClass('sound-end').removeClass('sound');
+                $(target).off('animationend MSAnimationEnd webkitAnimationEnd');
+            })
+        }
+    };
+    if(!Modernizr.touch){
+        SoundAnim.init();
+    }
 
 });

@@ -210,12 +210,12 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   overflow: hidden;
   background-image: url(../img/bg-1.jpg);
   background-repeat: no-repeat;
-  background-position: 290px top;
+  background-position: 280px top;
   background-size: contain;
 }
 @media (max-width: 1200px) and (min-width: 992px) {
   .part-1 .container {
-    background-position: 92px top;
+    background-position: 80px top;
   }
 }
 @media (max-width: 992px) {
@@ -388,6 +388,9 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 @media (max-width: 768px) {
   .part-2 .tab-wrap .btn-dimmed {
     top: 140px;
+    padding: 10px 40px 12px;
+    width: 205px;
+    margin-left: -102.5px;
   }
 }
 @media (max-width: 1200px) {
@@ -533,7 +536,20 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 .part-3 .remote {
   position: relative;
   z-index: 2;
-  padding-top: 120px;
+  padding-top: 140px;
+}
+.part-3 .remote .img-responsive {
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .part-3 .remote .img-responsive {
+    width: 206px;
+  }
+}
+@media (max-width: 1200px) {
+  .part-3 .remote .img-responsive {
+    width: 180px;
+  }
 }
 @media (max-width: 768px) {
   .part-3 .remote {
@@ -541,7 +557,6 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
     border-bottom: 1px solid #e2e2e2;
   }
   .part-3 .remote .img-responsive {
-    margin: 0 auto;
     position: relative;
     z-index: 2;
   }
@@ -551,6 +566,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 .part-3 .pulse-wrap {
   position: relative;
+  border-bottom: 1px solid #e2e2e2;
 }
 .part-3 .pulse {
   position: absolute;
@@ -577,13 +593,159 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
     padding: 30px 0;
   }
 }
+@-moz-keyframes sound-anim {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: -284px 0;
+  }
+  50% {
+    background-position: -568px 0;
+  }
+  75% {
+    background-position: -852px 0;
+  }
+  100% {
+    background-position: -1136px 0;
+  }
+}
+@-webkit-keyframes sound-anim {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: -284px 0;
+  }
+  50% {
+    background-position: -568px 0;
+  }
+  75% {
+    background-position: -852px 0;
+  }
+  100% {
+    background-position: -1136px 0;
+  }
+}
+@-ms-keyframes sound-anim {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: -284px 0;
+  }
+  50% {
+    background-position: -568px 0;
+  }
+  75% {
+    background-position: -852px 0;
+  }
+  100% {
+    background-position: -1136px 0;
+  }
+}
+.no-touch .part-3 .remote {
+  position: relative;
+}
+.no-touch .part-3 .trigger {
+  width: 284px;
+  height: 284px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -142px;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.no-touch .part-3 .trigger:not(.move) img {
+  cursor: pointer;
+}
+.no-touch .part-3 .trigger:not(.move) img:hover {
+  width: 45px;
+  height: 45px;
+  margin-left: -22.5px;
+  margin-top: -22.5px;
+}
+.no-touch .part-3 .trigger img {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  left: 50%;
+  top: 78%;
+  margin-left: -20.5px;
+  margin-top: -20.5px;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@media (max-width: 1200px) {
+  .no-touch .part-3 .trigger img {
+    top: 74%;
+  }
+}
+.no-touch .part-3 .trigger.move img {
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  margin-top: -30px;
+  top: 50%;
+  transition-property: top, width, height, margin-left, margin-top;
+  transition-duration: .5s;
+  transition-delay: 0s, .5s, .5s, .5s, .5s;
+}
+.no-touch .part-3 .trigger.sound {
+  -webkit-animation-name: sound-anim;
+  -ms-animation-name: sound-anim;
+  animation-name: sound-anim;
+  -webkit-animation-duration: 2.5s;
+  -ms-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: step-end;
+  -ms-animation-timing-function: step-end;
+  animation-timing-function: step-end;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background: url(../img/animation/anim-bg.png) 0 0 repeat;
+}
+.no-touch .part-3 .trigger.sound-end {
+  background: url(../img/animation/anim-bg.png) 284px 0 repeat;
+  -webkit-animation-name: none;
+  animation-name: none;
+}
+.touch .part-3 .remote {
+  position: relative;
+}
+.touch .part-3 .trigger {
+  background: url(../img/animation/anim-bg.png) 284px 0 repeat;
+  width: 284px;
+  height: 284px;
+  position: absolute;
+  left: 50%;
+  margin-left: -142px;
+  top: 0;
+}
+.touch .part-3 .trigger img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  margin-top: -30px;
+  top: 50%;
+  left: 50%;
+}
 .part-4 {
   background: #000;
 }
 .part-4 .container {
   padding-top: 70px;
-  padding-bottom: 100px;
-  background: url(../img/bg-4.jpg) right bottom no-repeat;
   background-size: auto 85%;
 }
 @media (max-width: 1200px) {
@@ -635,7 +797,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .part-5 h3 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 1200px) {
@@ -654,7 +816,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .part-5 .nav-tabs {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
 .part-5 .nav-tabs > li {
@@ -1001,6 +1163,8 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   left: 50%;
   margin-left: -112.5px;
   background: url(../img/bg-9.png) center center no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
 }
 .part-9 h2 {
   color: white;
@@ -1072,7 +1236,6 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .part-10 label {
-    font-size: 12px;
     margin-right: 15px;
   }
 }
@@ -1190,6 +1353,9 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 }
 footer {
   padding: 25px 0;
+}
+footer .left-wrap {
+  padding-top: 10px;
 }
 footer a {
   display: inline-block;
