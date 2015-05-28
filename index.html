@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fix.css">
 
     <!-- less.js script -->
     <!--<link rel="stylesheet/less" type="text/css" href="less/main.less" />
@@ -127,7 +128,7 @@
                     <div class="text">
                         <h2>Встречай<br class="hidden-sm hidden-xs"/> супервозможности!</h2>
                         <p>Кино, Сериалы, ТВ, Музыка, Игры –<br class="hidden-xs"/> все в одном <a href="#" data-toggle="modal" data-target="#modal-1">стриминг-плеере</a>.</p>
-                        <a class="btn btn-default" href="#">Смотреть видео</a>
+                        <a class="btn btn-default" href="#" data-toggle="modal" data-target="#modal-7">Смотреть видео</a>
                         <div class="mouse-wrap visible-lg visible-md">
                             <i class="glyph-mouse"></i>
                         </div>
@@ -872,7 +873,24 @@
     </div><!-- /.modal-dialog -->
 </div><!-- /#modal-6 -->
 
-
+<div class="modal fade" id="modal-7">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="glyph-close"></i></span></button>
+                <h4 class="modal-title">Видео</h4>
+            </div>
+            <div class="modal-body">
+                <div class="youtube-container">
+                    <iframe src="https://www.youtube.com/embed/7sX3p3O89Eg" frameborder="0" class="video" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-modal" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /#modal-1 -->
 
 
 
