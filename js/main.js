@@ -161,18 +161,17 @@ $(document).ready(function(){
             })
         },
         transitionWatcher1: function(target){
-            $(target).on('transitionend', function(){
+            $(target).on('transitionend webkitTransitionEnd MSTransitionEnd', function(){
                 $(target).addClass('sound');
-                $(target).off('transitionend');
+                $(target).off('transitionend webkitTransitionEnd MSTransitionEnd');
                 SoundAnim.transitionWatcher2(target);
             })
 
         },
         transitionWatcher2: function(target){
-            $(target).on('animationend', function(){
-                console.log('end');
+            $(target).on('animationend MSAnimationEnd webkitAnimationEnd', function(){
                 $(target).addClass('sound-end').removeClass('sound');
-                $(target).off('transitionend');
+                $(target).off('animationend MSAnimationEnd webkitAnimationEnd');
             })
         }
     };
