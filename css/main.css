@@ -533,7 +533,20 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 .part-3 .remote {
   position: relative;
   z-index: 2;
-  padding-top: 120px;
+  padding-top: 140px;
+}
+.part-3 .remote .img-responsive {
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .part-3 .remote .img-responsive {
+    width: 206px;
+  }
+}
+@media (max-width: 1200px) {
+  .part-3 .remote .img-responsive {
+    width: 180px;
+  }
 }
 @media (max-width: 768px) {
   .part-3 .remote {
@@ -541,7 +554,6 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
     border-bottom: 1px solid #e2e2e2;
   }
   .part-3 .remote .img-responsive {
-    margin: 0 auto;
     position: relative;
     z-index: 2;
   }
@@ -577,13 +589,140 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
     padding: 30px 0;
   }
 }
+@-moz-keyframes sound-anim {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: -284px 0;
+  }
+  50% {
+    background-position: -568px 0;
+  }
+  75% {
+    background-position: -852px 0;
+  }
+  100% {
+    background-position: -1136px 0;
+  }
+}
+@-webkit-keyframes sound-anim {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: -284px 0;
+  }
+  50% {
+    background-position: -568px 0;
+  }
+  75% {
+    background-position: -852px 0;
+  }
+  100% {
+    background-position: -1136px 0;
+  }
+}
+.no-touch .part-3 .remote {
+  position: relative;
+}
+.no-touch .part-3 .animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.no-touch .part-3 .animation .trigger {
+  width: 284px;
+  height: 284px;
+  position: absolute;
+  left: 50%;
+  margin-left: -142px;
+}
+.no-touch .part-3 .animation .trigger:not(.move) img {
+  cursor: pointer;
+}
+.no-touch .part-3 .animation .trigger:not(.move) img:hover {
+  width: 45px;
+  height: 45px;
+  margin-left: -22.5px;
+  margin-top: -22.5px;
+}
+.no-touch .part-3 .animation .trigger img {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  left: 50%;
+  top: 78%;
+  margin-left: -20.5px;
+  margin-top: -20.5px;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@media (max-width: 1200px) {
+  .no-touch .part-3 .animation .trigger img {
+    top: 74%;
+  }
+}
+.no-touch .part-3 .animation .trigger.move img {
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  margin-top: -30px;
+  top: 52%;
+  transition-property: top, width, height, margin-left, margin-top;
+  transition-duration: .5s;
+  transition-delay: 0s, .5s, .5s, .5s, .5s;
+}
+.no-touch .part-3 .animation .trigger.sound {
+  -webkit-animation-name: sound-anim;
+  animation-name: sound-anim;
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-timing-function: step-end;
+  -webkit-animation-timing-function: step-end;
+  background: url(../img/animation/anim-bg.png) 0 0 no-repeat;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+.touch .part-3 .remote {
+  position: relative;
+}
+.touch .part-3 .animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.touch .part-3 .animation .trigger {
+  background: url(../img/animation/anim-bg.png) 284px 0 repeat;
+  width: 284px;
+  height: 284px;
+  position: absolute;
+  left: 50%;
+  margin-left: -142px;
+}
+.touch .part-3 .animation .trigger img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  margin-top: -30px;
+  top: 50%;
+  left: 50%;
+}
 .part-4 {
   background: #000;
 }
 .part-4 .container {
   padding-top: 70px;
-  padding-bottom: 100px;
-  background: url(../img/bg-4.jpg) right bottom no-repeat;
   background-size: auto 85%;
 }
 @media (max-width: 1200px) {

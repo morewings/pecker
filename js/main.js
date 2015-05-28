@@ -143,7 +143,41 @@ $(document).ready(function(){
         $('.part-6 .highlight span').addClass('hidden');
         $('.part-6 .highlight .'+className).removeClass('hidden');
 
-    })
+    });
 
+    //animation
+
+    var SoundAnim = {
+        init: function(){
+            SoundAnim.clickWatcher();
+        },
+        clickWatcher: function () {
+            $('.animation .trigger').on('click', function(e){
+                e.preventDefault();
+                $(this).addClass('move');
+
+                SoundAnim.transitionWatcher1(this);
+                $('.animation .trigger').off('click');
+            })
+        },
+        transitionWatcher1: function(target){
+            $(target).on('transitionend', function(){
+                $(target).addClass('sound');
+                $(target).off('transitionend');
+                SoundAnim.transitionWatcher2(target);
+            })
+
+        },
+        transitionWatcher2: function(target){
+            $(target).on('transitionend', function(){
+                console.log('end');
+                $(target).addClass('sound-end');
+                $(target).off('transitionend');
+            })
+        }
+    };
+    if(!Modernizr.touch){
+        SoundAnim.init();
+    }
 
 });
