@@ -1279,18 +1279,14 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   }
 }
 .part-10 button {
-  background: url(../img/right.svg) no-repeat transparent;
   border: none;
-  font-size: 25px;
-  line-height: 1;
-  width: 25px;
-  height: 25px;
+  width: 27px;
+  height: 27px;
   position: absolute;
   right: 0;
   top: 0;
-}
-.part-10 button:hover {
-  background-image: url(../img/right-hover.svg);
+  background: url(../img/right.png) no-repeat transparent;
+  background-image: url(../img/right-hover.png);
 }
 .part-11 {
   background: #2a9edf;
@@ -1364,7 +1360,9 @@ footer a {
 footer .logo {
   width: 95px;
   height: 15px;
-  background: url(../img/logo-small.svg) no-repeat;
+  background: url(../img/logo-small.png) no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
   margin-right: 30px;
 }
 footer form {
