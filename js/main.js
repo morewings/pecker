@@ -152,7 +152,7 @@ $(document).ready(function(){
             SoundAnim.clickWatcher();
         },
         clickWatcher: function () {
-            $('.animation .trigger').on('click', function(e){
+            $('.trigger').on('click', function(e){
                 e.preventDefault();
                 $(this).addClass('move');
 
@@ -169,9 +169,9 @@ $(document).ready(function(){
 
         },
         transitionWatcher2: function(target){
-            $(target).on('transitionend', function(){
+            $(target).on('animationend', function(){
                 console.log('end');
-                $(target).addClass('sound-end');
+                $(target).addClass('sound-end').removeClass('sound');
                 $(target).off('transitionend');
             })
         }

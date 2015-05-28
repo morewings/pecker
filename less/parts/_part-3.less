@@ -197,68 +197,66 @@
     .remote{
       position: relative;
     }
-    .animation{
+    .trigger{
+      width: 284px;
+      height: 284px;
       position: absolute;
       top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      .trigger{
-        width: 284px;
-        height: 284px;
-        position: absolute;
-        left: 50%;
-        margin-left: -284/2px;
-        &:not(.move){
-          img{
-            cursor: pointer;
-            &:hover{
-              width: 45px;
-              height: 45px;
-              margin-left: -45/2px;
-              margin-top: -45/2px;
-            }
-          }
-
-        }
+      left: 50%;
+      margin-left: -284/2px;
+      &:not(.move){
         img{
-          position: absolute;
-          width: 41px;
-          height: 41px;
-          left: 50%;
-          top: 78%;
-          margin-left: -41/2px;
-          margin-top: -41/2px;
-          .acc-3d();
-          @media (max-width: 1200px){
-            top: 74%;
+          cursor: pointer;
+          &:hover{
+            width: 45px;
+            height: 45px;
+            margin-left: -45/2px;
+            margin-top: -45/2px;
           }
         }
-        &.move{
-          img{
-            width: 60px;
-            height: 60px;
-            margin-left: -60/2px;
-            margin-top: -60/2px;
-            top:52%;
-            transition-property: top, width, height, margin-left, margin-top;
-            transition-duration: .5s;
-            transition-delay: 0s, .5s, .5s, .5s, .5s;
-          }
+
+      }
+      img{
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        left: 50%;
+        top: 78%;
+        margin-left: -41/2px;
+        margin-top: -41/2px;
+        .acc-3d();
+        @media (max-width: 1200px){
+          top: 74%;
         }
-        &.sound{
-          -webkit-animation-name: sound-anim;
-          animation-name: sound-anim;
-          animation-duration: 2.5s;
-          -webkit-animation-duration: 2.5s;
-          animation-iteration-count: 1;
-          -webkit-animation-iteration-count: 1;
-          animation-timing-function: step-end;
-          -webkit-animation-timing-function: step-end;
-          background: url(../../img/animation/anim-bg.png) 0 0 no-repeat;
-          animation-fill-mode: both;
-          -webkit-animation-fill-mode: both;
+      }
+      &.move{
+        img{
+          width: 60px;
+          height: 60px;
+          margin-left: -60/2px;
+          margin-top: -60/2px;
+          top:52%;
+          transition-property: top, width, height, margin-left, margin-top;
+          transition-duration: .5s;
+          transition-delay: 0s, .5s, .5s, .5s, .5s;
         }
+      }
+      &.sound{
+        -webkit-animation-name: sound-anim;
+        animation-name: sound-anim;
+        animation-duration: 2.5s;
+        -webkit-animation-duration: 2.5s;
+        animation-iteration-count: 1;
+        -webkit-animation-iteration-count: 1;
+        animation-timing-function: step-end;
+        -webkit-animation-timing-function: step-end;
+        background: url(../../img/animation/anim-bg.png) 0 0 repeat;
+
+      }
+      &.sound-end{
+        background: url(../../img/animation/anim-bg.png) 284px 0 repeat;
+        -webkit-animation-name: none;
+        animation-name: none;
       }
     }
   }
@@ -269,29 +267,23 @@
     .remote{
       position: relative;
     }
-    .animation{
+    .trigger{
+      background: url(../../img/animation/anim-bg.png) 284px 0 repeat;
+      width: 284px;
+      height: 284px;
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      .trigger{
-        background: url(../../img/animation/anim-bg.png) 284px 0 repeat;
-        width: 284px;
-        height: 284px;
-        position: absolute;
-        left: 50%;
-        margin-left: -284/2px;
+      left: 50%;
+      margin-left: -284/2px;
+      top:0;
 
-        img{
-          position: absolute;
-          width: 60px;
-          height: 60px;
-          margin-left: -60/2px;
-          margin-top: -60/2px;
-          top:50%;
-          left: 50%;
-        }
+      img{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        margin-left: -60/2px;
+        margin-top: -60/2px;
+        top:50%;
+        left: 50%;
       }
     }
   }
