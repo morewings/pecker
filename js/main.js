@@ -205,13 +205,9 @@ $(document).ready(function(){
         },
         playVideo: function(targetVideo){
 
-            targetVideo
-                .load()
-                .on('canplaythrough', function(){
-                    $(this).get(0).play();
-                });
+            targetVideo.get(0).play();
 
-            VideoTabs.playing = targetVideo;
+
         }
     };
 
