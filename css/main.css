@@ -735,6 +735,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   left: 50%;
   margin-left: -142px;
   top: 0;
+  z-index: 9000;
 }
 .touch .part-3 .trigger img {
   position: absolute;
