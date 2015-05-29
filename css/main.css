@@ -726,12 +726,6 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 .no-touch .part-3 .trigger:not(.move) img {
   cursor: pointer;
 }
-.no-touch .part-3 .trigger:not(.move) img:hover {
-  width: 45px;
-  height: 45px;
-  margin-left: -22.5px;
-  margin-top: -22.5px;
-}
 .no-touch .part-3 .trigger img {
   position: absolute;
   width: 41px;
@@ -782,6 +776,50 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   background: url(../img/animation/anim-bg.png) 284px 0 repeat;
   -webkit-animation-name: none;
   animation-name: none;
+}
+@-webkit-keyframes attention {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes attention {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.no-touch .part-3 .trigger.attention {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: attention;
+  animation-name: attention;
+}
+.no-touch .part-3 .trigger.attention img {
+  height: 50px;
+  left: 50%;
+  margin-left: -25.5px;
+  margin-top: -25.5px;
+  position: absolute;
+  top: 77%;
+  transform: translateZ(0px);
+  width: 50px;
 }
 .touch .part-3 .remote {
   position: relative;

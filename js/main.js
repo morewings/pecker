@@ -151,11 +151,12 @@ $(document).ready(function(){
         init: function(){
             SoundAnim.clickWatcher();
             $('.discovery, .part-3 .text').addClass('opacity-enabled');
+            $('.trigger').addClass('attention');
         },
         clickWatcher: function () {
             $('.trigger').on('click', function(e){
                 e.preventDefault();
-                $(this).addClass('move');
+                $(this).addClass('move').removeClass('attention');
 
                 SoundAnim.transitionWatcher1(this);
                 $('.animation .trigger').off('click');
