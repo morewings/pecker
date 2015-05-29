@@ -22,6 +22,7 @@
   .discovery{
     position: relative;
     z-index: 2;
+
     h3{
       font-size: 33px;
       background: url(../../img/line.svg) left bottom no-repeat;
@@ -35,8 +36,49 @@
 
 
     }
-    dd,
-    dt{
+    .disc-row{
+
+      &:nth-of-type(2){
+        .dd{
+        }
+        .dt{
+        }
+      }
+      &:nth-of-type(3){
+        .dd{
+        }
+        .dt{
+        }
+      }
+      &:nth-of-type(4){
+        .dd{
+          opacity: .6;
+        }
+        .dt{
+          opacity: .3;
+        }
+      }
+      &:nth-of-type(5){
+        .dd{
+          opacity: .4;
+        }
+        .dt{
+          opacity: .2;
+        }
+      }
+      &:nth-of-type(6){
+        .dd{
+          opacity: .2;
+        }
+        .dt{
+          opacity: .1;
+        }
+      }
+
+    }
+
+    .dd,
+    .dt{
       float: left;
       margin-bottom: 20px;
       line-height: 17px;
@@ -44,7 +86,7 @@
         margin-top: 5px;
       }
     }
-    dd{
+    .dd{
       clear: left;
       min-width: 60px;
       margin-right: 30px;
@@ -57,17 +99,8 @@
       &.accent{
         color: black;
       }
-      &:nth-child(7){
-        opacity: .6;
-      }
-      &:nth-child(9){
-        opacity: .4;
-      }
-      &:nth-child(11){
-        opacity: .2;
-      }
     }
-    dt{
+    .dt{
       font-size: 16px;
       opacity: .4;
       .lightFont;
@@ -78,22 +111,87 @@
         opacity: 1;
         font-size: 20px;
       }
-      &:nth-child(8){
-        opacity: .3;
-      }
-      &:nth-child(10){
-        opacity: .2;
-      }
-      &:nth-child(12){
-        opacity: .1;
-      }
     }
   }
   .disc-alt{
     margin-top: 30px;
     width: 100%;
   }
+
 }
+
+
+.part-3 {
+  .discovery {
+    &.opacity-enabled{
+      h3{
+        opacity: 0;
+      }
+      .disc-row{
+        .dd{
+          opacity: 0 !important;
+        }
+        .dt{
+          opacity: 0 !important;
+        }
+      }
+    }
+    &.opacity-disabled{
+      .disc-row{
+        .dd,
+        .dt{
+          -webkit-transition: opacity .5s ease-in-out;
+          -ms-transition: opacity .5s ease-in-out;
+          transition: opacity .5s ease-in-out;
+        }
+        &:nth-of-type(1){
+          .dd,
+          .dt{
+            -webkit-transition-delay: .5s;
+            transition-delay: .5s;
+          }
+        }
+        &:nth-of-type(2){
+          .dd,
+          .dt{
+            -webkit-transition-delay: 1s;
+            transition-delay: 1s;
+          }
+        }
+        &:nth-of-type(3){
+          .dd,
+          .dt{
+            -webkit-transition-delay: 1.5s;
+            transition-delay: 1.5s;
+          }
+        }
+        &:nth-of-type(4){
+          .dd,
+          .dt{
+            -webkit-transition-delay: 2s;
+            transition-delay: 2s;
+          }
+        }
+        &:nth-of-type(5){
+          .dd,
+          .dt{
+            -webkit-transition-delay: 2.5s;
+            transition-delay: 2.5s;
+          }
+        }
+        &:nth-of-type(6){
+          .dd,
+          .dt{
+            -webkit-transition-delay: 3s;
+            transition-delay: 3s;
+          }
+        }
+      }
+
+    }
+  }
+}
+
 
 .part-3{
   .remote{
