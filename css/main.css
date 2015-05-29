@@ -546,41 +546,57 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
 .part-3 .discovery.opacity-enabled .disc-row .dt {
   opacity: 0 !important;
 }
+.part-3 .discovery.opacity-disabled .disc-row h3,
 .part-3 .discovery.opacity-disabled .disc-row .dd,
 .part-3 .discovery.opacity-disabled .disc-row .dt {
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -ms-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }
 .part-3 .discovery.opacity-disabled .disc-row:nth-of-type(1) .dd,
 .part-3 .discovery.opacity-disabled .disc-row:nth-of-type(1) .dt {
-  -webkit-transition-delay: .5s;
-  transition-delay: .5s;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
 .part-3 .discovery.opacity-disabled .disc-row:nth-of-type(2) .dd,
 .part-3 .discovery.opacity-disabled .disc-row:nth-of-type(2) .dt {
-  -webkit-transition-delay: 1s;
-  transition-delay: 1s;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
 }
 .part-3 .discovery.opacity-disabled .disc-row:nth-of-type(3) .dd,
 .part-3 .discovery.opacity-disabled .disc-row:nth-of-type(3) .dt {
-  -webkit-transition-delay: 1.5s;
-  transition-delay: 1.5s;
+  -webkit-transition-delay: 0.75s;
+  transition-delay: 0.75s;
 }
 .part-3 .discovery.opacity-disabled .disc-row:nth-of-type(4) .dd,
 .part-3 .discovery.opacity-disabled .disc-row:nth-of-type(4) .dt {
-  -webkit-transition-delay: 2s;
-  transition-delay: 2s;
+  -webkit-transition-delay: 0.75s;
+  transition-delay: 0.75s;
 }
 .part-3 .discovery.opacity-disabled .disc-row:nth-of-type(5) .dd,
 .part-3 .discovery.opacity-disabled .disc-row:nth-of-type(5) .dt {
-  -webkit-transition-delay: 2.5s;
-  transition-delay: 2.5s;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
 }
 .part-3 .discovery.opacity-disabled .disc-row:nth-of-type(6) .dd,
 .part-3 .discovery.opacity-disabled .disc-row:nth-of-type(6) .dt {
-  -webkit-transition-delay: 3s;
-  transition-delay: 3s;
+  -webkit-transition-delay: 1.25s;
+  transition-delay: 1.25s;
+}
+.part-3 .text.opacity-enabled h3,
+.part-3 .text.opacity-enabled p {
+  opacity: 0 !important;
+}
+.part-3 .text.opacity-disabled h3,
+.part-3 .text.opacity-disabled p {
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -ms-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+  opacity: 1;
+}
+.part-3 .text.opacity-disabled p {
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.75s;
 }
 .part-3 .remote {
   position: relative;

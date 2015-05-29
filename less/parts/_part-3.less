@@ -120,6 +120,7 @@
 
 }
 
+@time: .25s;
 
 .part-3 {
   .discovery {
@@ -138,56 +139,81 @@
     }
     &.opacity-disabled{
       .disc-row{
+        h3,
         .dd,
         .dt{
-          -webkit-transition: opacity .5s ease-in-out;
-          -ms-transition: opacity .5s ease-in-out;
-          transition: opacity .5s ease-in-out;
+          -webkit-transition: opacity @time ease-in-out;
+          -ms-transition: opacity @time ease-in-out;
+          transition: opacity @time ease-in-out;
         }
         &:nth-of-type(1){
           .dd,
           .dt{
-            -webkit-transition-delay: .5s;
-            transition-delay: .5s;
+            -webkit-transition-delay: @time;
+            transition-delay: @time;
           }
         }
         &:nth-of-type(2){
           .dd,
           .dt{
-            -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+            -webkit-transition-delay: @time*2;
+            transition-delay: @time*2;
           }
         }
         &:nth-of-type(3){
           .dd,
           .dt{
-            -webkit-transition-delay: 1.5s;
-            transition-delay: 1.5s;
+            -webkit-transition-delay: @time*3;
+            transition-delay: @time*3;
           }
         }
         &:nth-of-type(4){
           .dd,
           .dt{
-            -webkit-transition-delay: 2s;
-            transition-delay: 2s;
+            -webkit-transition-delay: @time*3;
+            transition-delay: @time*3;
           }
         }
         &:nth-of-type(5){
           .dd,
           .dt{
-            -webkit-transition-delay: 2.5s;
-            transition-delay: 2.5s;
+            -webkit-transition-delay: @time*4;
+            transition-delay: @time*4;
           }
         }
         &:nth-of-type(6){
           .dd,
           .dt{
-            -webkit-transition-delay: 3s;
-            transition-delay: 3s;
+            -webkit-transition-delay: @time*5;
+            transition-delay: @time*5;
           }
         }
       }
 
+    }
+  }
+}
+
+.part-3{
+  .text{
+    &.opacity-enabled{
+      h3,
+      p{
+        opacity: 0 !important;
+      }
+    }
+    &.opacity-disabled{
+      h3,
+      p{
+        -webkit-transition: opacity @time ease-in-out;
+        -ms-transition: opacity @time ease-in-out;
+        transition: opacity @time ease-in-out;
+        opacity: 1;
+      }
+      p{
+        -webkit-transition-delay: @time;
+        transition-delay: @time*3;
+      }
     }
   }
 }

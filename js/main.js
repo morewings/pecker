@@ -150,7 +150,7 @@ $(document).ready(function(){
     var SoundAnim = {
         init: function(){
             SoundAnim.clickWatcher();
-            $('.discovery').addClass('opacity-enabled');
+            $('.discovery, .part-3 .text').addClass('opacity-enabled');
         },
         clickWatcher: function () {
             $('.trigger').on('click', function(e){
@@ -173,11 +173,8 @@ $(document).ready(function(){
             $(target).on('animationend MSAnimationEnd webkitAnimationEnd', function(){
                 $(target).addClass('sound-end').removeClass('sound');
                 $(target).off('animationend MSAnimationEnd webkitAnimationEnd');
-                $('.discovery').removeClass('opacity-enabled').addClass('opacity-disabled');
+                $('.discovery, .part-3 .text').removeClass('opacity-enabled').addClass('opacity-disabled');
             })
-        },
-        discAnimation:function(){
-
         }
     };
     if(!Modernizr.touch){
