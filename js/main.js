@@ -130,7 +130,7 @@ $(document).ready(function(){
     };
 
     if(!Modernizr.touch){
-        //VideoTabs.init();
+        VideoTabs.init();
     }
 
 
