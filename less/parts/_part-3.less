@@ -209,10 +209,8 @@
         -ms-transition: opacity @time ease-in-out;
         transition: opacity @time ease-in-out;
         opacity: 1;
-      }
-      p{
-        -webkit-transition-delay: @time;
-        transition-delay: @time*3;
+        -webkit-transition-delay: @time*6;
+        transition-delay: @time*6;
       }
     }
   }
@@ -334,6 +332,7 @@
     background-position: -@animWidth*4 0;
   }
 }
+@time2:1.5s;
 
 .no-touch{
   .part-3{
@@ -389,9 +388,9 @@
         -webkit-animation-name: sound-anim;
         -ms-animation-name: sound-anim;
         animation-name: sound-anim;
-        -webkit-animation-duration: 2.5s;
-        -ms-animation-duration: 2.5s;
-        animation-duration: 2.5s;
+        -webkit-animation-duration: @time2;
+        -ms-animation-duration: @time2;
+        animation-duration: @time2;
         -webkit-animation-iteration-count: 1;
         -ms-animation-iteration-count: 1;
         animation-iteration-count: 1;

@@ -593,10 +593,8 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   -ms-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
   opacity: 1;
-}
-.part-3 .text.opacity-disabled p {
-  -webkit-transition-delay: 0.25s;
-  transition-delay: 0.75s;
+  -webkit-transition-delay: 1.5s;
+  transition-delay: 1.5s;
 }
 .part-3 .remote {
   position: relative;
@@ -767,9 +765,9 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
   -webkit-animation-name: sound-anim;
   -ms-animation-name: sound-anim;
   animation-name: sound-anim;
-  -webkit-animation-duration: 2.5s;
-  -ms-animation-duration: 2.5s;
-  animation-duration: 2.5s;
+  -webkit-animation-duration: 1.5s;
+  -ms-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-iteration-count: 1;
   -ms-animation-iteration-count: 1;
   animation-iteration-count: 1;
