@@ -1,5 +1,5 @@
 .part-4{
-  background: #000;
+  background: #1a1a1a;
   .container{
     padding-top: @topMarginLg;
     //padding-bottom: 100px;
@@ -34,4 +34,42 @@
       font-weight: bold;
     }
   }
+}
+
+.part-4{
+  .embed-responsive-custom{
+    padding-bottom: 64%;
+  }
+  .video-wrap{
+    position: relative;
+    padding-top: 40px;
+    a.btn{
+      position: absolute;
+      top: 66%;
+      left: 42%;
+      margin-top: -40px/2;
+      margin-left: -100px/2;
+      z-index: 2000;
+      font-size: 15px;
+      text-transform: none;
+      letter-spacing: 0;
+      font-weight: normal;
+      i, 
+      span{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      i{
+        margin-right: 20px;
+      }
+    }
+    video{
+      //width: 750px;
+      //height: 480px;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  
 }

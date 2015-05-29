@@ -4,6 +4,30 @@
 		{
 			"icon": {
 				"paths": [
+					"M853.333 469.333h-519.253l238.293-238.293-60.373-60.373-341.333 341.333 341.333 341.333 60.373-60.373-238.293-238.293h519.253v-85.333z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"arrow-back"
+				],
+				"grid": 24
+			},
+			"attrs": [],
+			"properties": {
+				"id": 672,
+				"order": 16,
+				"prevSize": 24,
+				"code": 58884,
+				"name": "arrow-back"
+			},
+			"setIdx": 0,
+			"setId": 11,
+			"iconIdx": 672
+		},
+		{
+			"icon": {
+				"paths": [
 					"M810.667 273.707l-60.373-60.373-238.293 238.293-238.293-238.293-60.373 60.373 238.293 238.293-238.293 238.293 60.373 60.373 238.293-238.293 238.293 238.293 60.373-60.373-238.293-238.293z"
 				],
 				"attrs": [
@@ -25,8 +49,8 @@
 				"code": 58883,
 				"name": "close"
 			},
-			"setIdx": 0,
-			"setId": 6,
+			"setIdx": 2,
+			"setId": 9,
 			"iconIdx": 0
 		},
 		{
@@ -55,8 +79,8 @@
 				"name": "phone"
 			},
 			"setIdx": 2,
-			"setId": 4,
-			"iconIdx": 0
+			"setId": 9,
+			"iconIdx": 1
 		},
 		{
 			"icon": {
@@ -79,8 +103,8 @@
 				"name": "usb"
 			},
 			"setIdx": 2,
-			"setId": 4,
-			"iconIdx": 1
+			"setId": 9,
+			"iconIdx": 2
 		},
 		{
 			"icon": {
@@ -111,7 +135,7 @@
 				"code": 58994
 			},
 			"setIdx": 1,
-			"setId": 5,
+			"setId": 10,
 			"iconIdx": 0
 		},
 		{
@@ -139,7 +163,7 @@
 				"name": "menu"
 			},
 			"setIdx": 3,
-			"setId": 3,
+			"setId": 8,
 			"iconIdx": 0
 		},
 		{
@@ -165,7 +189,7 @@
 				"code": 61593
 			},
 			"setIdx": 4,
-			"setId": 2,
+			"setId": 7,
 			"iconIdx": 0
 		},
 		{
@@ -192,7 +216,7 @@
 				"code": 61594
 			},
 			"setIdx": 4,
-			"setId": 2,
+			"setId": 7,
 			"iconIdx": 1
 		},
 		{
@@ -218,8 +242,8 @@
 				"code": 61653
 			},
 			"setIdx": 4,
-			"setId": 2,
-			"iconIdx": 4
+			"setId": 7,
+			"iconIdx": 2
 		},
 		{
 			"icon": {
@@ -244,8 +268,8 @@
 				"code": 61833
 			},
 			"setIdx": 4,
-			"setId": 2,
-			"iconIdx": 5
+			"setId": 7,
+			"iconIdx": 3
 		}
 	],
 	"height": 1024,
@@ -276,7 +300,8 @@
 			"png": true,
 			"useClassSelector": true,
 			"color": 4473924,
-			"bgColor": 16777215
+			"bgColor": 16777215,
+			"classSelector": ".icon"
 		},
 		"historySize": 100,
 		"showCodes": false

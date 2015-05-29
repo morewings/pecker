@@ -188,6 +188,35 @@ $(document).ready(function(){
     $('#usb-switch').on('click', function(){
         $('.usb-images').removeClass('hidden');
         $('.ios-images').addClass('hidden');
-    })
+    });
+
+    //remote video
+    var RemoteVideo = {
+        init: function(){
+            RemoteVideo.clickWatch();
+        },
+        clickWatch: function(){
+            $('#remoteVideoButton').on('click', function(e){
+                e.preventDefault();
+                var video = $(this).next().find('video');
+                $(this).hide();
+                RemoteVideo.playVideo(video);
+            });
+        },
+        playVideo: function(targetVideo){
+
+            targetVideo
+                .load()
+                .on('canplaythrough', function(){
+                    $(this).get(0).play();
+                });
+
+            VideoTabs.playing = targetVideo;
+        }
+    };
+
+    if(!Modernizr.touch){
+        RemoteVideo.init();
+    }
 
 });
