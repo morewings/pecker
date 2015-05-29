@@ -1640,13 +1640,10 @@ footer label select {
   height: 55px;
   background: url(../img/top.svg) no-repeat transparent;
 }
-.modal .modal-super {
-  width: 100%;
-  margin-top: 0;
-}
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .modal .modal-super {
-    margin: 0;
+    width: 100%;
+    margin-top: 0;
   }
 }
 .modal .modal-dialog {
