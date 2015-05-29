@@ -1764,6 +1764,12 @@ footer label select {
     color: #808080;
   }
 }
+@media (max-width: 768px) {
+  #modal-6 .modal-content .close {
+    right: 20px;
+    top: 70px;
+  }
+}
 #modal-6 .left-wrap {
   padding: 60px 75px;
 }
