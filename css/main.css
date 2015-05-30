@@ -782,7 +782,7 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
     -webkit-transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.1);
+    -webkit-transform: scale(1.05);
   }
   100% {
     -webkit-transform: scale(1);
@@ -793,15 +793,15 @@ body[style="overflow: hidden; padding-right: 17px;"] .navbar-fixed-top {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   100% {
     transform: scale(1);
   }
 }
 .no-touch .part-3 .trigger.attention {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-timing-function: ease-in;
