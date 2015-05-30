@@ -218,4 +218,79 @@ $(document).ready(function(){
         RemoteVideo.init();
     }
 
+    // GA events
+    $('a.custom-navbar-toggle').not('.close').on('click', function(e){
+        ga('send', 'event', 'menu', 'opened');
+    });
+    $('a.custom-navbar-toggle.close').on('click', function(e){
+        ga('send', 'event', 'menu', 'closed');
+    });
+    $('a.custom-navbar-toggle.close').on('click', function(e){
+        ga('send', 'event', 'menu', 'closed');
+    });
+    $('#modal-1').on('shown.bs.modal', function(e){
+        ga('send', 'event', 'streaming-player-popup', 'opened');
+    });
+    $('#modal-1').on('hidden.bs.modal', function(e){
+        ga('send', 'event', 'streaming-player-popup', 'closed');
+    });
+    $('#modal-2').on('shown.bs.modal', function(e){
+        ga('send', 'event', 'transform-to-play-popup', 'opened');
+    });
+    $('#modal-2').on('hidden.bs.modal', function(e){
+        ga('send', 'event', 'transform-to-play-popup', 'closed');
+    });
+    $('#modal-3').on('shown.bs.modal', function(e){
+        ga('send', 'event', 'content-tip-popup', 'opened');
+    });
+    $('#modal-3').on('hidden.bs.modal', function(e){
+        ga('send', 'event', 'content-tip-popup', 'closed');
+    });
+    $('#modal-4').on('shown.bs.modal', function(e){
+        ga('send', 'event', 'tv-for-kids-popup', 'opened');
+    });
+    $('#modal-4').on('hidden.bs.modal', function(e){
+        ga('send', 'event', 'tv-for-kids-popup', 'closed');
+    });
+    $('#modal-5').on('shown.bs.modal', function(e){
+        ga('send', 'event', 'how-it-works-popup', 'opened');
+    });
+    $('#modal-5').on('hidden.bs.modal', function(e){
+        ga('send', 'event', 'how-it-works-popup', 'closed');
+    });
+    $('#modal-6').on('shown.bs.modal', function(e){
+        ga('send', 'event', 'preorder-popup', 'opened');
+    });
+    $('#modal-6').on('hidden.bs.modal', function(e){
+        ga('send', 'event', 'preorder-popup', 'closed');
+    });
+    $('#modal-7').on('shown.bs.modal', function(e){
+        ga('send', 'event', 'video-popup', 'opened');
+    });
+    $('#modal-7').on('hidden.bs.modal', function(e){
+        ga('send', 'event', 'video-popup', 'closed');
+    });
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        var tabName = e.target.href.split("#")[1];
+        ga('send', 'event', 'tab-'+tabName, 'shown');
+    })
+    $('.trigger').on('click', function(e){
+        ga('send', 'event', 'voice-search-animation', 'run');
+    });
+    $('#remoteVideoButton').on('click', function(e){
+        ga('send', 'event', 'game-mode-animation', 'run');
+    });
+    $('a.eth').on('click', function(e){
+        ga('send', 'event', 'ethernet-hint', 'shown');
+    });
+    $('a.wifi').on('click', function(e){
+        ga('send', 'event', 'wifi-hint', 'shown');
+    });
+
+    $('.part-2 a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+        $('html, body').animate({
+            scrollTop: $(".glyph-mouse").offset().top
+        }, 1000);
+    })
+
 });
