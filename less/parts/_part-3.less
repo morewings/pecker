@@ -1,6 +1,6 @@
 .part-3{
   .container{
-    background: url(../../img/3/pulse.svg) center 460px repeat-x;
+    background: url('@{imgPath}/3/pulse.svg') center 460px repeat-x;
     background-size: 100%;
     padding-top: @topMarginLg;
     @media (max-width: 1200px){
@@ -25,7 +25,7 @@
 
     h3{
       font-size: 33px;
-      background: url(../../img/line.png) left bottom no-repeat;
+      background: url('@{imgPath}/line.png') left bottom no-repeat;
       background-size: contain;
       .lightFont;
       text-transform: none;
@@ -252,7 +252,7 @@
   }
   .pulse{
     position: absolute;
-    background: url(../../img/3/pulse.svg) left bottom repeat-x;
+    background: url('@{imgPath}/3/pulse.svg') left bottom repeat-x;
     background-size: auto 100%;
     left: 0;
     right: 0;
@@ -399,11 +399,11 @@
         animation-timing-function: step-end;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
-        background: url(../../img/animation/anim-bg.png) 0 0 repeat;
+        background: url('@{imgPath}/animation/anim-bg.png') 0 0 repeat;
 
       }
       &.sound-end{
-        background: url(../../img/animation/anim-bg.png) 284px 0 repeat;
+        background: url('@{imgPath}/animation/anim-bg.png') 284px 0 repeat;
         -webkit-animation-name: none;
         animation-name: none;
       }
@@ -458,7 +458,7 @@
       position: relative;
     }
     .trigger{
-      background: url(../../img/animation/anim-bg.png) 284px 0 repeat;
+      background: url('@{imgPath}/animation/anim-bg.png') 284px 0 repeat;
       width: 284px;
       height: 284px;
       position: absolute;
